@@ -1,4 +1,176 @@
+/****** ICONS *********/
+.fa.fa-user{
+	font-size: 16px;
+	margin-right:5px;
+}
+/****** /ICONS *********/
+
+/******** HEADER ******/
 .header{
 	width:100%;
 	position: fixed;
 }
+.top1 div{
+	display:inline-block;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.top{
+	line-height: 30px;
+	background-color:#363636;
+	color:#a8a8a8;
+}
+.international {
+	text-decoration: none;
+	width:160px;
+	padding-left: 5px;
+}
+.international a, .login a{
+	text-decoration: none;
+	color:#a8a8a8;
+}
+.visitor{
+	width:150px;
+}
+.navbar-brand{
+	padding:0px;
+	height:70px;
+}
+.yellow-header{
+	background-color:#ecb429;
+}
+.telfHome span{
+	color: #fc0;
+    text-transform: uppercase;
+}
+.telfHome{
+	color:#fff;
+}
+.navbar{
+	border:none;
+}
+
+/******** /HEADER ******/
+
+/******** Languages Flag ******/
+.languages {
+    float: left;
+    list-style-type: none;
+    margin-bottom:0px;
+
+}
+
+.languages li {
+    float: left;
+    width: 18px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.languages li a {
+    float: left;
+    width: 18px;
+    height: 14px;
+    display: block;
+}
+
+.languages li:last-child {
+    margin-right: 0px;
+}
+
+.languages #langPTPT {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/pt-pt.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langPTBR {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/pt-br.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langENGB {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/en-gb.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langFRFR {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/fr-fr.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langDEDE {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/de-de.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langESES {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/es-es.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langCAES {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/ca-es.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langRURU {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/ru-ru.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langZHCN {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/zh-cn.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langNBNO {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/nb-no.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langITIT {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/it-it.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langSVSE {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/sv-se.png) left no-repeat;
+    background-size: cover;
+}
+
+.languages #langSQAL {
+    background: url(http://www.century21albania.com/themes/13660/images/lang/sq-al.png) left no-repeat;
+    background-size: cover;
+}
+
+/****** /Languages Flag *********/
+
+/****** LOGO *********/
+.scroll-slow {
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    color: #030303;
+    font-size: 14px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.slogan {
+    float: left;
+}
+.scroll-slow p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 70px;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-slow 15s linear infinite;
+    -webkit-animation: scroll-slow 15s linear infinite;
+    animation: scroll-slow 15s linear infinite;
+}
+
+/****** /LOGO *********/
