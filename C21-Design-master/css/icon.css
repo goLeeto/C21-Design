@@ -1,0 +1,42 @@
+.glyphicon-chevron-left,.glyphicon-chevron-right{
+	font-size:40px;
+	height: 60px;
+}
+.glyphicon-chevron-right{
+	margin-left: 5%;
+}
+.glyphicon-chevron-left{
+	margin-left:7%;
+}
+.fa.fa-heart-o , .fa.fa-star-o,.fa.fa-lightbulb-o{
+	padding-top: 20px;
+	font-size: 55px;
+	color:#00bc9c;
+}
+.fa.fa-facebook, .fa.fa-google-plus, .fa.fa-twitter, .fa.fa-pinterest,.fa.fa-behance,.fa.fa-dribbble{
+	line-height: 40px;
+}
+.fa.fa-facebook:hover{
+	color:#fff;
+	background-color:#4668b3;
+}
+.fa.fa-google-plus:hover{
+	color:#fff;
+	background-color: #de5745;
+}
+.fa.fa-twitter:hover{
+	color:#fff;
+	background-color: #2fbbed;
+}
+.fa.fa-pinterest:hover{
+	color:#fff;
+	background-color: #d94348;
+}
+.fa.fa-behance:hover{
+	color:#fff;
+	background-color: #3079ff;
+}
+.fa.fa-dribbble:hover{
+	color:#fff;
+	background-color: #eb6397;
+}

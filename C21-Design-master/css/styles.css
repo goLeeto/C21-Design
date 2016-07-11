@@ -1,0 +1,241 @@
+
+.navbar.navbar-inverse.social{
+	min-height: 40px;
+	margin-bottom: 0px;
+	
+	
+}
+.navbar.navbar-inverse.social h6{
+	margin-right: 27px;
+	color: #00bc9c;
+	display: inline-block;
+}
+.navbar.navbar-inverse.social h6 span{
+	width:30px;
+	text-align: center;
+}
+
+
+/* ------slide horizontal-------*/
+.container-fluid{
+	padding-left:0px;
+	padding-right:0px;
+	padding-top: 15%;
+	height: 1100px;
+}
+.slide-shiriti{
+	z-index: 2;
+	margin-top: 400px;
+	margin-bottom: -20px;
+	width: 96.5%;
+	height: 150px;
+	background-color:#000;
+	transform: skew(-21deg)rotate(-21deg);
+}
+.slide-shiriti1{
+	z-index: 2;
+	margin-top: -650px;
+	margin-bottom: -20px;
+	width: 96.5%;
+	height: 150px;
+	background-color:#000;
+	transform: skew(-21deg)rotate(-21deg);
+}
+.slide{
+	height:550px;
+	width: 96.5%;
+	background-color: #f93;
+	transform: skew(-21deg)rotate(-21deg);
+}
+
+.first{
+	margin-left:7%;
+}
+
+.slide img{
+	display: inline-block;
+	margin-top:-40px;
+}
+
+
+/* ------/slide horizontal-------*/
+
+h6.pull-left.up1:hover, .navbar.navbar-inverse.social h6:hover{
+	color:#00bc9c;
+}
+h6.pull-right{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+
+.slide-div img{
+	    transform: skew(21deg)rotate(21deg);
+}
+.images{
+ min-height: 800px;
+  text-align: center;
+}
+.row.col-md-12{
+  text-align: center;
+}
+.mobile{
+  position: absolute;
+}
+
+.desktop{
+  z-index: 1;
+  position: fixed;
+}
+.tablet{
+  z-index: 2;
+  position: fixed;
+}
+.mobile{
+  z-index: 3;
+}
+.hapesire{
+  height:700px;
+  background:red;
+}
+.desktop,.tablet,.mobile{
+  	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+}
+.deskMob{
+	margin-top:-50px;
+}
+
+
+/* ----------Rrethi---------- */
+/**
+ * Circular menu v2
+ */
+* { margin: 0; padding: 0; }
+
+.menuopt { display: none; }
+.circle, .circle:before, .circle:after { border-radius: 50%; }
+nav {
+	margin: 5em auto;
+	min-width: 16em; width: 72%; max-width: 40em;
+}
+nav ul {
+	position: relative;
+	padding: 50%;
+	max-width: 0; max-height: 0;
+	box-shadow: 0 0 .5em rgba(0,0,0,.5);
+	list-style: none;
+	background: white;
+}
+nav li {
+	position: absolute;
+	transition: 2s;
+}
+label{
+	max-width: 200%;
+}
+.slice {
+	overflow: hidden;
+	position: absolute;
+	top: 0; left: 0;
+	width: 50%; height: 50%;
+	transform-origin: 100% 100%;
+}
+.unsel {
+	top: 29%; left: 29%;
+	width: 42%; height: 42%;
+	box-shadow: 0 0 .75em;
+	background: paleturquoise;
+}
+.coconut { transform: skewX(50deg); }
+.vanilla { transform: rotate(40deg) skewX(50deg); }
+.orange { transform: rotate(80deg) skewX(50deg); }
+.almond { transform: rotate(120deg) skewX(50deg); }
+.grape { transform: rotate(160deg) skewX(50deg); }
+.blackberry { transform: rotate(-160deg) skewX(50deg); }
+.cherry { transform: rotate(-120deg) skewX(50deg); }
+.strawberry { transform: rotate(-80deg) skewX(50deg); }
+.raspberry { transform: rotate(-40deg) skewX(50deg); }
+.magnifiable { height: 100%; }
+nav label { cursor: pointer; }
+.slice label {
+	display: block;
+	width: 200%; height: 200%;
+	transform: skew(-50deg) rotate(-70deg);
+	box-shadow: 0 0 .1em black;
+	opacity: .5;
+	color: transparent;
+	font-size: .8em;
+	line-height: 1.9;
+	text-align: center;
+	text-decoration: none;
+	transition: 1s;
+}
+.slice label:before {
+	position: absolute;
+	top: 10%; left: 10%;
+	width: 80%; height: 80%;
+	border-radius: 50%;
+	box-shadow: 0 0 1em rgba(0,0,0,.5);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: 35% 35%;
+	content: '';
+}
+.slice label:hover { opacity: 1; }
+.dark label:hover { color: white; }
+.light label:hover { color: black; }
+.unsel label {
+	display: block;
+	height: 100%;
+	background: radial-gradient(rgba(0,0,0,.5), transparent 50%);
+}
+.coconut label, .ococonut:hover ~ nav .unsel { background: #f4f5fa; }
+.vanilla label, .ovanilla:hover ~ nav .unsel { background: #ffeb98; }
+.orange label, .oorange:hover ~ nav .unsel { background: #ffb038; }
+.almond label, .oalmond:hover ~ nav .unsel { background: #d3a573; }
+.grape label, .ogrape:hover ~ nav .unsel { background: #d9e260; }
+.blackberry label, .oblackberry:hover ~ nav .unsel { background: #833a68; }
+.cherry label, .ocherry:hover ~ nav .unsel { background: #b1001d; }
+.strawberry label, .ostrawberry:hover ~ nav .unsel { background: #ec0404; }
+.raspberry label, .oraspberry:hover ~ nav .unsel { background: #ef6982; }
+.coconut label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Cocos_nucifera00.jpg/320px-Cocos_nucifera00.jpg); }
+.vanilla label:before { background-image: url(http://www.learningherbs.com/image-files/vanilla-extract-7.jpg); }
+.orange label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/OrangeBloss_wb.jpg/250px-OrangeBloss_wb.jpg); }
+.almond label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/PikiWiki_Israel_7025_Amond_blossom.jpg/170px-PikiWiki_Israel_7025_Amond_blossom.jpg); }
+.grape label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/220px-Table_grapes_on_white.jpg); }
+.blackberry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ripe%2C_ripening%2C_and_green_blackberries.jpg/220px-Ripe%2C_ripening%2C_and_green_blackberries.jpg); }
+.cherry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cherry_Stella444.jpg/220px-Cherry_Stella444.jpg); }
+.strawberry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PerfectStrawberry.jpg/220px-PerfectStrawberry.jpg); }
+.raspberry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Raspberries05.jpg/220px-Raspberries05.jpg); }
+.slice label:hover:after { opacity: 0; }
+.ococonut:hover ~ nav .coconut { transform: skewX(50deg) scale(1.05); }
+.ovanilla:hover ~ nav .vanilla { transform: rotate(40deg) skewX(50deg) scale(1.05); }
+.oorange:hover ~ nav .orange { transform: rotate(80deg) skewX(50deg) scale(1.05); }
+.oalmond:hover ~ nav .almond { transform: rotate(120deg) skewX(50deg) scale(1.05); }
+.ogrape:hover ~ nav .grape { transform: rotate(160deg) skewX(50deg) scale(1.05); }
+.oblackberry:hover ~ nav .blackberry { transform: rotate(-160deg) skewX(50deg) scale(1.05); }
+.ocherry:hover ~ nav .cherry { transform: rotate(-120deg) skewX(50deg) scale(1.05); }
+.ostrawberry:hover ~ nav .strawberry { transform: rotate(-80deg) skewX(50deg) scale(1.05); }
+.oraspberry:hover ~ nav .raspberry { transform: rotate(-40deg) skewX(50deg) scale(1.05); }
+.ococonut:hover ~ nav .coconut label, 
+.ovanilla:hover ~ nav .vanilla label, 
+.oorange:hover ~ nav .orange label, 
+.oalmond:hover ~ nav .almond label, 
+.ogrape:hover ~ nav .grape label, 
+.oraspberry:hover ~ nav .raspberry label {
+	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	opacity: 1; color: black;
+}
+.oblackberry:hover ~ nav .blackberry label , 
+.ocherry:hover ~ nav .cherry label, 
+.ostrawberry:hover ~ nav .strawberry label {
+	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	opacity: 1; color: white;
+}
+@media (min-width: 25em) { .slice label { font-size: 1em; line-height: 2.3; } }
+@media (min-width: 35em) { .slice label { font-weight: 700; line-height: 2.7; } }
+
+/* ----------/Rrethi---------- */
