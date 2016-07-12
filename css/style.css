@@ -1,3 +1,16 @@
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 /****** ICONS *********/
 .fa.fa-user{
 	font-size: 16px;
@@ -9,6 +22,8 @@
 .header{
 	width:100%;
 	position: fixed;
+	top: 0;
+    z-index: 100;
 }
 .top1 div{
 	display:inline-block;
@@ -172,5 +187,303 @@
     -webkit-animation: scroll-slow 15s linear infinite;
     animation: scroll-slow 15s linear infinite;
 }
+@-moz-keyframes scroll-slow {
+    0% {
+        -moz-transform: translateX(100%);
+    }
 
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-slow {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-slow {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
 /****** /LOGO *********/
+
+/* 	MAIN CONTAINER */
+.main-container{
+	position: relative;
+	margin-top:100px;
+	min-height: 550px;
+}
+
+.spot01{
+	height: 330px;
+	padding-left: 0px;
+}
+.spot01-img{
+	background-image: url(../img/spot01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.spot01-menu1{
+	list-style: none;
+	color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    padding-top: 35px;
+    padding-left: 0px;
+}
+.spot01-menu2{
+	list-style: none;
+	color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    padding-top: 35px;
+    padding-left: 70px;
+}
+
+.apartamente,.shtepi,.ne-ndertim,.komerciale,.jashte-vendit,.projekte-rezidenciale,.prona-luks,.troje,.zone-turistike,.apartamente-qira{
+	display:inline-block;
+	background-position: 0px 0px;
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear, ease-in;
+}
+.apartamente-nr,.shtepi-nr,.ne-ndertim-nr,.komerciale-nr{
+	font-size: 14px;
+    font-weight: 300;
+}
+
+.apartamente{
+	background: url(http://www.century21albania.com/themes/13660/images/im01.png) no-repeat;
+}
+.shtepi{
+	background: url(http://www.century21albania.com/themes/13660/images/im02.png) no-repeat;
+}
+.ne-ndertim{
+	background: url(http://www.century21albania.com/themes/13660/images/im03.png) no-repeat;
+}
+.komerciale{
+	background: url(http://www.century21albania.com/themes/13660/images/im04.png) no-repeat;
+}
+.jashte-vendit{
+	background: url(http://www.century21albania.com/themes/13660/images/im05.png) no-repeat;
+}
+.apartamente-qira{
+	background: url(http://www.century21albania.com/themes/13660/images/im06.png) no-repeat;
+}
+.zone-turistike{
+	background: url(http://www.century21albania.com/themes/13660/images/im07.png) no-repeat;
+}
+.troje{
+	background: url(http://www.century21albania.com/themes/13660/images/im08.png) no-repeat;
+}
+.prona-luks{
+	background: url(http://www.century21albania.com/themes/13660/images/im09.png) no-repeat;
+}
+.projekte-rezidenciale{
+	background: url(http://www.century21albania.com/themes/13660/images/im10.png) no-repeat;
+}
+li:hover{
+	color: #ecb429;
+	cursor: pointer;
+
+}li span{
+	vertical-align: middle;
+}
+
+li:hover .apartamente{
+	background: url(http://www.century21albania.com/themes/13660/images/im01.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+li:hover .shtepi{
+	background: url(http://www.century21albania.com/themes/13660/images/im02.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+li:hover .ne-ndertim{
+	background: url(http://www.century21albania.com/themes/13660/images/im03.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+li:hover .komerciale{
+	background: url(http://www.century21albania.com/themes/13660/images/im04.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+li:hover .jashte-vendit{
+	background: url(http://www.century21albania.com/themes/13660/images/im05.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+li:hover .apartamente-qira{
+	background: url(http://www.century21albania.com/themes/13660/images/im06.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+li:hover .zone-turistike{
+	background: url(http://www.century21albania.com/themes/13660/images/im07.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+li:hover .troje{
+	background: url(http://www.century21albania.com/themes/13660/images/im08.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+li:hover .prona-luks{
+	background: url(http://www.century21albania.com/themes/13660/images/im09.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+li:hover .projekte-rezidenciale{
+	background: url(http://www.century21albania.com/themes/13660/images/im10.png) no-repeat;
+	background-position: 50% 100% !important;
+}
+
+.spot02{
+	background-color: #666666;
+	max-height: 150px;
+	min-height: 105px;
+}
+.spot02-background{
+	background-color: #363636;
+	min-height: 140px;
+	max-height: 170px;
+	padding: 15px 0px;
+}
+.nav-tabs li.active a,.nav li.active a{
+	background-color: #666666;
+	color: white;
+	border: none;
+}
+.nav-tabs li.active a:hover,.nav li.active a:focus, .nav li.active a:hover{
+	background-color: #666666;
+	cursor: pointer;
+	color: white;
+	border: none;
+}
+.nav-tabs li a:hover,.nav li a:hover{
+	background-color: #bfbfbf;
+	cursor: pointer;
+	color: white;
+	border: none;
+}
+
+.nav-tabs li a,.nav li a{
+	background-color: #bfbfbf;
+	border:none;
+}
+.spot02 .row .nav-tabs{
+	background-color: #363636;
+}
+.nav-tabs{
+	border: none;
+}
+
+
+
+/*** drop down***/
+
+.dropdown-check-list {
+  display: inline-block;
+}
+.dropdown-check-list .anchor,.dropdown-check-list .anchor2 {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  border: 1px solid #ccc;
+}
+.dropdown-check-list .anchor:after,.dropdown-check-list .anchor2:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.dropdown-check-list .anchor:active:after,.dropdown-check-list .anchor2:active:after {
+  right: 8px;
+  top: 21%;
+}
+.dropdown-check-list ul.items,.dropdown-check-list ul.items2 {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: white;
+}
+.dropdown-check-list ul.items li,.dropdown-check-list ul.items2 li {
+  list-style: none;
+}
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    -webkit-appearance:initial;
+    background-color: white;
+    border-radius: 2px;
+    border:1px solid #cecece;
+}
+input[type="checkbox"]:checked:after{
+	content: "✓";
+	margin-left: 2px;
+}
+input{
+	vertical-align: middle;
+}
+
+#items li span,#items2 li span{
+	margin-left: 10px;
+}
+#items li,#items2 li{
+	line-height: 31px;
+	border-bottom: 1px solid #eee;
+	padding: 0px 3px;
+}
+.anchor,.anchor2{
+	width: 280px;
+	background-color: white;
+}
+#list1,#list2{
+	color: #666;
+}
+#kerko-prone{
+	height: 55px;
+}
+
+
+
+
+
+/*** /dropdown***/
