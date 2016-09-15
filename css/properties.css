@@ -1,0 +1,280 @@
+.spot11 .col-md-3 .col-md-12{
+	margin-bottom:10px;
+}
+.spot11 >.col-md-3{
+	min-height: 140px;
+	width:22%;
+}
+.spot11 .col-md-3 h2{
+	font-size: 18px;
+    text-align: center;
+}
+.spot11 .col-md-3 .col-md-12 h5{
+    text-align: center;
+    color:#a8a8a8;
+}
+.kerkobtn1,.kerkobtn2{
+	background: #ecb429;
+    border: 0;
+    padding: 8px 76px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+}
+.kerkobtn1:hover, .kerkobtn2:hover{
+	background-color:#363636;
+	color:#fff;
+}
+.spot11 >.col-md-9{
+    margin-top:50px;
+    width: 78%;
+}
+.select{
+	width:100%;
+}
+.fa.fa-th, .fa.fa-th-list{
+	font-size: 30px;
+	color:white;
+}
+.fa.fa-th.active, .fa.fa-th-list.active{
+	color:#ecb429;
+}
+.main-container{
+	background-color: #f3f3f3;
+}
+.space{
+	display: inline-block;
+	width: 10px;
+}
+.left i{
+	float:right;
+}
+.fa.fa-th{
+	margin-right:20px;
+}
+.anch,.inp-anch{
+	height:38px;
+	border:none;
+}
+.inp-anch{
+	padding:0 5px;
+}
+.row .col-md-4 .col-md-12{
+	padding:0;
+}
+.msg-text{
+	width:100%;
+	border:none;
+}
+.spot11 .col-md-9 .row{
+	margin:0;
+}
+.kerkobtn2{
+	background-color:#999;
+	margin-right:5px;
+}
+
+.pull-right button{
+	padding: 7px 0px;
+}
+
+
+
+/* Posts */
+.post{
+	height: 245px;
+	background: #e9e9e9;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #666;
+}
+.topContent{
+	min-height: 200px;
+    margin-bottom: 10px;
+    float: left;
+}
+.topContent .subtitle{
+	font-weight:normal;
+	font-size:16px;
+}
+.topContent .title{
+	float: left;
+    max-width: 82%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size:20px;
+    font-weight:normal;
+}
+.postContent a{
+	color:#666;
+}
+.postImg img{
+	min-height:244px;
+}
+.post,.postImg{
+	padding-top: 0px;
+}
+.bottom div{
+	display: inline-block;
+}
+.bottom .ref{
+	background: #838383;
+    float: left;
+    padding: 3px 10px;
+    font-size: 12px;
+    color: #fff;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+.bottom .vis{
+    background: #ecb429;
+    float: left;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.titleO{
+	font-size: 11px;
+    color: #666;
+    line-height: 20px;
+    font-weight: normal;
+}
+.text{
+	font-weight: 700;
+    color: #363636;
+    line-height: 22px;
+    padding: 0 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.post .col-md-2{
+	text-align:center;
+	border-left: 1px dotted #666;
+    min-height: 245px; 
+}
+
+.text.icoPhone,.text.icoEmail{
+	line-height: 16px;
+    font-weight: 400;
+    font-size:11px;
+    word-wrap: break-word;
+}
+.icons-3{
+	vertical-align: middle;
+	float:right;
+	padding-right:10px;
+	margin-top:20px;
+}
+.icons-3 i{
+	font-size: 15px;
+	color:#ecb429;
+	background:#fff;
+	padding:4px;
+	border-radius: 2px;
+}
+.icons-3 i:hover{
+	background:#363636;
+}
+/* /postPosts */
+
+/* prone */
+.spot12{
+	margin-top: 20px;
+}
+.prezantim ul li{
+	min-width: 70px!important;
+}
+.prezantim ul li a{
+	background: none;
+	color: #666;
+}
+.prezantim ul li.active a{
+	background: #dcdcdc;
+	color: #666;
+
+}
+.prezantim ul li.active a:hover{
+	background: #dcdcdc;
+	color: #666;
+}
+.prezantim ul li.active a:focus{
+	background: #dcdcdc;
+	color: #666;
+}
+.tab-content{
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 10px;
+	background-color: #dcdcdc;
+	min-height: 770px;
+}
+.prezantim-container{
+	margin: 10px;
+	min-height: 740px;
+	min-width:98%;
+	background-color: red;
+}
+.tab-content{
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.changePicture{
+	padding-top: 10px;
+}
+
+
+
+
+
+/* prone */
+
+
+
+@media screen and (max-width: 990px){
+	.hide990{
+		display: none;
+	}
+	.col-md-3 .col-md-12 .col-md-12 button.kerkobtn1{
+		margin-top: 32px;
+	}
+
+
+}
+@media screen and (max-width: 768px){
+	.no-pull-right{
+		float:none!important;
+	}
+	.main-container{
+		top: 10px;
+	}
+	body .fmenu-background{
+		margin-top: 10px;
+	}
+
+}
+@media screen and (max-width: 420px){
+
+	.main-container{
+		top: 30px;
+	}
+	body .fmenu-background{
+		margin-top: 30px;
+	}
+
+
+
+}
+
+

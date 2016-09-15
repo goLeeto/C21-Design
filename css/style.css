@@ -1,15 +1,26 @@
+body{
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
 .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
 	padding: 5px;
 }
+.container{
+	padding: 0px;
+}
+.nopadding{
+	padding:0!important;
+}
 
+a:link {
+	text-decoration: none;
+	color:inherit;
+}
 
-
-
-
-
-
-
-
+/****** SVG *******/
+path.jvectormap-region.jvectormap-element:hover {
+    fill: #fffae6;
+}
 
 /****** ICONS *********/
 .fa.fa-user{
@@ -31,7 +42,7 @@
 	vertical-align: middle;
 }
 .top{
-	line-height: 30px;
+	line-height: 20px;
 	background-color:#363636;
 	color:#a8a8a8;
 }
@@ -53,6 +64,7 @@
 }
 .yellow-header{
 	background-color:#ecb429;
+	z-index: 1000;
 }
 .telfHome span{
 	color: #fc0;
@@ -91,6 +103,10 @@
 
 .languages li:last-child {
     margin-right: 0px;
+}
+.shortLanguages{
+	padding-top: 8px;
+    height: 30px;
 }
 
 .languages #langPTPT {
@@ -228,9 +244,12 @@
 	margin-top:100px;
 	min-height: 550px;
 }
-
+.harta{
+	display: none;
+	margin-top:20px;
+}
 .spot01{
-	height: 330px;
+	height: 335px;
 	padding-left: 0px;
 }
 .spot01-img{
@@ -284,7 +303,13 @@
 	font-size: 14px;
     font-weight: 300;
 }
+li:hover{
+	color: #ecb429;
+	cursor: pointer;
 
+}li span{
+	vertical-align: middle;
+}
 .apartamente{
 	background: url(http://www.century21albania.com/themes/13660/images/im01.png) no-repeat;
 }
@@ -315,14 +340,6 @@
 .projekte-rezidenciale{
 	background: url(http://www.century21albania.com/themes/13660/images/im10.png) no-repeat;
 }
-li:hover{
-	color: #ecb429;
-	cursor: pointer;
-
-}li span{
-	vertical-align: middle;
-}
-
 li:hover .apartamente{
 	background: url(http://www.century21albania.com/themes/13660/images/im01.png) no-repeat;
 	background-position: 50% 100% !important;
@@ -403,7 +420,9 @@ li:hover .projekte-rezidenciale{
 .nav-tabs{
 	border: none;
 }
-
+.tab-pane .form-group{
+	padding-left: 15px;
+}
 
 
 /*** drop down***/
@@ -411,14 +430,7 @@ li:hover .projekte-rezidenciale{
 .dropdown-check-list {
   display: inline-block;
 }
-.dropdown-check-list .anchor,.dropdown-check-list .anchor2 {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  padding: 5px 50px 5px 10px;
-  border: 1px solid #ccc;
-}
-.dropdown-check-list .anchor:after,.dropdown-check-list .anchor2:after {
+.dropdown-check-list .anch:after {
   position: absolute;
   content: "";
   border-left: 2px solid black;
@@ -432,10 +444,35 @@ li:hover .projekte-rezidenciale{
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-.dropdown-check-list .anchor:active:after,.dropdown-check-list .anchor2:active:after {
+.anch:active:after{
   right: 8px;
   top: 21%;
 }
+.anch{
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  border: 1px solid #ccc;
+}
+.hidden-sm{
+	z-index: 99;
+}
+.anch:after{
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 .dropdown-check-list ul.items,.dropdown-check-list ul.items2 {
   padding: 2px;
   display: none;
@@ -443,6 +480,9 @@ li:hover .projekte-rezidenciale{
   border: 1px solid #ccc;
   border-top: none;
   background: white;
+  position: absolute;
+  z-index: 99;
+  min-width:96%;
 }
 .dropdown-check-list ul.items li,.dropdown-check-list ul.items2 li {
   list-style: none;
@@ -463,17 +503,22 @@ input{
 	vertical-align: middle;
 }
 
-#items li span,#items2 li span{
+.items li span{
 	margin-left: 10px;
 }
-#items li,#items2 li{
+.items li,{
 	line-height: 31px;
 	border-bottom: 1px solid #eee;
 	padding: 0px 3px;
 }
-.anchor,.anchor2{
+
+.anch{
 	width: 280px;
 	background-color: white;
+	color:#666;
+}
+.anch-kerko{
+	width:100%;
 }
 #list1,#list2{
 	color: #666;
@@ -482,8 +527,575 @@ input{
 	height: 55px;
 }
 
+.kerkobtn{
+	background: #ecb429;
+    border: 0;
+    padding: 8px 76px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.kerkobtn:hover{
+	background-color:#363636;
+	color:#fff;
+}
+.control-label{
+	padding: 0;
+}
 
-
-
+#home .form-group div.col-sm-10, #profile .form-group div.col-sm-10, #messages .form-group div.col-sm-10{
+	width: 81%;
+	padding-left: 25px;
+}
+#home .form-group div.col-sm-10 .form-control, #profile .form-group div.col-sm-10 .form-control, #messages .form-group div.col-sm-10 .form-control{
+	height:37px;
+}
+.nav.nav-tabs li{
+	min-width: 150px;
+    text-align: center;
+}
+.spot03-background{
+	background: #f3f3f3;
+	height:259px;
+}
+.spot03{
+	height:259px;
+}
+.spot03 .row .col-md-3{
+	max-height: 230px;
+	margin-top:15px;
+}
+.spot03 .row .col-md-3 img{
+	max-width: 100%;
+}
+.spot3 .row{
+	margin: 0 auto;
+}
 
 /*** /dropdown***/
+
+
+/**** okazion *****/
+
+.hiddenslide{
+	max-height: 225px;
+	position: absolute;
+    bottom: 0px;
+    width: 96.5%;
+    height: 50px;
+    overflow: hidden;
+    z-index: 98;
+    transition: height 0.7s;
+}
+.tarpCaption{
+	background: #767676;
+    opacity: 0.6;
+    position: absolute;
+    background-color: #4a4741;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+}
+.tarpCaptionText{
+	position: relative;
+    padding: 10px;
+    text-align: left;
+}
+.hiddenslide .text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.hiddenslide .title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.spot03 .row .col-md-3:hover  .hiddenslide{
+	height: 98%;
+}
+
+
+.hiddenslide .subtitle{
+	color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.sticker{
+	position: absolute; 
+	visibility: visible; 
+	box-sizing: border-box; 
+	padding: 0px; 
+	margin: 0px; 
+	z-index: 98; 
+	top: 20px; left: 185px; 
+	width: 91px; 
+	height: 91px; 
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEyMS4wMDAwMDBwdCIgaGVpZ2h0PSIxMjIuMDAwMDAwcHQiIHZpZXdCb3g9IjAgMCAxMjEuMDAwMDAwIDEyMi4wMDAwMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPiA8ZGVmcz4gPGxpbmVhckdyYWRpZW50IGlkPSJncmFkMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPiA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMTU2LDExOCwzMik7c3RvcC1vcGFjaXR5OjEiIC8+IDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDE5NiwxNTgsNzIpO3N0b3Atb3BhY2l0eToxIiAvPiA8L2xpbmVhckdyYWRpZW50PiA8L2RlZnM+IDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDEyMi4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiIGZpbGw9InVybCgjZ3JhZDEpIiBzdHJva2U9Im5vbmUiPiA8cGF0aCBkPSJNNDc0IDExOTEgYy0zMCAtMjMgLTUzIC0zMSAtOTQgLTMzIC01MCAtMyAtNTYgLTYgLTc3IC0zOCAtMTYgLTI0IC0zOCAtNDAgLTcxIC01MSAtNDcgLTE3IC01OCAtMjkgLTgyIC05NCAtNiAtMTYgLTI5IC00MiAtNTEgLTU3IC0zNyAtMjcgLTM5IC0zMCAtMzkgLTgyIDAgLTQ0IC01IC02MCAtMjYgLTg1IC0yMSAtMjYgLTI1IC0zNyAtMTkgLTY0IDkgLTM5IDkgLTk4IDAgLTE1MiAtNiAtMzUgLTMgLTQzIDE5IC02NCAyMiAtMjAgMjYgLTMzIDI2IC03OCAwIC00MCA1IC01NyAxOSAtNjkgNjYgLTU2IDgxIC03NCA4MSAtOTggMCAtMzMgMzMgLTY2IDY2IC02NiAyNCAwIDQyIC0xNSA5OCAtODIgMTQgLTE2IDI1IC0xOCA2MCAtMTMgMzkgNiA0NyA0IDc4IC0yNCA0MCAtMzQgNjAgLTM4IDEwOSAtMTcgMzAgMTIgNDAgMTIgODMgLTIgMzEgLTEwIDUzIC0xMiA2MSAtNiA1OSA0MyA3MiA0OSAxMTkgNDkgNDggMCA1MSAyIDc5IDQyIDE4IDI3IDM4IDQ1IDU1IDQ4IDU2IDEyIDc2IDI5IDkwIDc4IDkgMzQgMjEgNTEgNDEgNjEgNDMgMjMgNTQgNDMgNTIgOTUgLTEgNDAgNCA1NCAzMCA4NyAzMiA0MCAzMiA1MSA4IDExMSAtMTEgMjggLTExIDM3IDQgNjggMjMgNDggMjIgNTYgLTEzIDEwMCAtMjUgMzIgLTMwIDQ2IC0yOCA4OCAxIDUyIDEgNTIgLTY0IDk4IC0xMyA5IC0yOCAzNiAtMzUgNjIgLTEyIDQzIC0xNiA0NyAtNjAgNjAgLTM4IDExIC01NCAyMyAtNzYgNTUgLTI3IDQwIC0zMCA0MiAtODEgNDIgLTQ0IDAgLTYwIDUgLTkxIDMwIC0yMSAxNyAtNDAgMzAgLTQzIDMwIC0yIDAgLTI2IC04IC01MyAtMTcgLTQ1IC0xNiAtNTAgLTE2IC04NCAwIC00NiAyMiAtNDQgMjIgLTkxIC0xMnoiLz4gPC9nPiA8L3N2Zz4="); 
+	background-size: cover; 
+	background-position: center center; 
+	background-repeat: no-repeat;
+}
+
+.sticker div{
+	position: relative; 
+	white-space: normal; 
+	display: table-cell; 
+	color: rgb(255, 255, 255); 
+	font-size: 14px; 
+	font-family: Verdana; 
+	font-style: normal; 
+	line-height: 19px; 
+	width: 91px; 
+	height: 91px; 
+	vertical-align: middle;
+	text-align: center; 
+	margin: 3px; 
+	box-sizing: border-box; 
+	overflow: hidden; 
+	text-shadow: rgba(0, 0, 0, 0.431373) 1px 1px 3px; 
+	left: 0px; 
+	transform: scale(1);
+}
+
+
+/**** spot 04 ********/
+
+.spot04-background{
+	background: #eaeaea;
+    min-height: 240px;
+    padding: 15px 0;
+    margin:0;
+}
+.section{
+	color: #363636;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+.thumbnail{
+	 width: auto;
+    height: 80px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    margin:0 auto;
+}
+.spot04 .row .col-md-2 a .title{
+	 padding: 5px 0;
+    font-size: 13px;
+    min-height: 3px;
+    text-align:center;
+}
+.IMGPremiosH {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 0px 25% 0px 25%;
+    background: url(http://www.century21albania.com/themes/13660/images/premios01.png) top left no-repeat;
+    background-size: contain;
+}
+.spot04 .row .col-md-2{
+	float: left;
+    min-height: 233px;
+    margin: 4px 1% 0 0;
+    padding: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
+    zoom: 1;
+}
+
+.spot04 .row .col-md-4 a img{
+
+    height: 240px;
+}
+
+
+
+
+/****** spot 05 ******/
+.spot05-background{
+	background: #f3f3f3;
+    min-height: 230px;
+}
+
+.spot05 .row .col-md-3 .title{
+	color: #363636;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    min-height: 59px;
+    margin: 20px 0 0px 0;
+}
+.spot05 .row .col-md-3 .text{
+    padding: 5px 0 20px 0;
+    min-height: 85px;
+    color: #666;
+}
+
+.spot05 .row .col-md-3 .link{
+	background-color: #ecb429;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 0;
+    padding: 11px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.spot05 .row .col-md-3 .input-group input,.spot05 .row .col-md-3 .input-group .input-group-btn button {
+	height: 40px;
+}
+.spot05 .row .col-md-3 .input-group .input-group-btn button{
+	background-color: #ecb429;
+    color: #fff;
+}
+
+.spot05 .row .col-md-3 .section {
+    color: #363636;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.carousel-inner{
+	min-height: 190px;
+}
+.carousel-indicators{
+	width:100%;
+	float:right;
+	
+}
+.carousel-indicators li{
+	background-color: #fff;
+	width:13px;
+	height:13px;
+	float:right;
+	margin-right: 6px;
+}
+.carousel-indicators li.active{
+	background-color: #666;
+	width:15px;
+	height:15px;
+	float:right;
+	margin-right: 6px;
+}
+
+
+.spot05 .row .col-md-3 .link-carousel{
+	display: block !important;
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    z-index: 100;
+    color: #d09912;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.carousel-inner .item a{
+	color: #666;
+}
+.fmenu-background{
+	background: #4d4d4d;
+    min-height: 55px;
+}
+
+
+
+/**** fmenu ******/
+
+
+
+nav ul {
+	padding: 0;
+  	margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #4d4d4d;
+	line-height: 50px;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color: #a8a8a8;
+    
+}
+
+
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 50px;
+
+}
+	
+
+nav ul li:hover > ul {
+	display:inherit;
+	z-index: 100;
+}
+	
+nav ul ul li {
+	width: auto;
+	float:none;
+	display:list-item;
+	position: relative;
+	background: #4b4b4b;
+}
+
+nav ul li:hover>ul li {
+	border-top:1px dotted #a8a8a8;
+}
+nav ul li:hover>a {
+	color:white;
+}
+
+nav ul li ul{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+nav ul li ul li:last-child{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.container.fmenu nav ul li a:link {
+    color: #a8a8a8;
+}
+
+
+/***** footer ******/
+.footer-background{
+	background: #363636;
+	min-height: 200px;
+}
+.footer .row .col-md-10 .col-md-3 .title{
+	font-size: 14px;
+    text-transform: uppercase;
+    color: #a8a8a8;
+}
+.footer .row .col-md-10 .col-md-3 ul{
+	list-style: none;
+	padding: 0px;
+
+}
+
+.footer .row .col-md-10 .col-md-3 ul li a{
+	color:#a8a8a8;
+}
+.footer .row .col-md-10 .col-md-3 ul li:hover> a{
+	color:#fff;
+}
+.social-footer{
+	list-style: none;
+	padding: 0;
+}
+.social-footer li {
+    display: inline-block;
+}
+.social-footer li a i{
+	font-size: 30px;
+    color: #ecb429;
+}
+.footer .row .col-md-2 .title{
+	color:#a8a8a8;
+	font-size: 14px;
+}
+.social-footer li a i:hover{
+    color: #fff;
+}
+.nav.nav-tabs{
+	margin-right: 15px;
+	margin-left: 15px;
+}
+	
+
+
+
+@media screen and (max-width: 1440px){
+	.kerkobtn{
+		padding: 8px 50px;
+	}
+	.carousel-indicators {
+    	width: 85%;
+    }
+    .nav.nav-tabs{
+		margin-right: 15px;
+    	margin-left: 15px;
+	}
+	.tab-pane .form-group{
+    	padding-left: 15px;
+    }	
+	
+}
+@media screen and (max-width: 1040px){
+	.harta{
+	    top: 30px;
+	}
+	.carousel-indicators {
+    	display: none;
+    }
+    .spot01-menu1, .spot01-menu2{
+    	font-size:14px;
+    }
+    .spot01{
+    	width:auto;
+    }
+    .spot03-background {
+    	height: auto;
+	}
+	.spot03{
+		height: auto;	
+	}
+	.kerkobtn{
+		padding: 8px 25px;
+	}
+	.nav.nav-tabs{
+		margin-right: 15px;
+    	margin-left: 15px;
+	}
+	#kerko-prone{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	
+
+}
+@media screen and (max-width: 768px){
+	.harta{
+	    right: 10px;
+	    position: absolute;
+	    height: 300px;
+	    top: 30px;
+	}
+	.visitor{
+    	display: none!important;
+    }
+	.hidden-sm{
+		display: none;
+	}
+	.nav.nav-tabs li{
+		min-width: auto;
+	}
+	/*.spot01-menu2-hide{
+		display: none;
+	}*/
+	.spot01-menu2 {
+	    padding-left: 0px;
+	}
+	.apartamente,.shtepi,.ne-ndertim,.komerciale,.jashte-vendit,.projekte-rezidenciale,.prona-luks,.troje,.zone-turistike,.apartamente-qira{
+	    height: 22px;
+	    width: 22px;
+	}
+	.apartamente,.shtepi,.ne-ndertim,.komerciale,.jashte-vendit,.apartamente-qira,.zone-turistike,.troje,.prona-luks,.projekte-rezidenciale{
+		background: url("http://www.century21albania.com/themes/13660/images/radiomask.png") no-repeat;
+	}
+	li:hover .apartamente,li:hover .shtepi,li:hover .ne-ndertim,li:hover .komerciale,li:hover .jashte-vendit,li:hover .apartamente-qira,li:hover .zone-turistike,li:hover .troje,li:hover .prona-luks,li:hover .projekte-rezidenciale{
+		background: url("http://www.century21albania.com/themes/13660/images/radiomask.png") no-repeat;
+		background-position: 50% 100% !important;
+	}
+	.spot01-menu1, .spot01-menu2{
+    	font-size:12px;
+    }
+    .apartamente-nr, .shtepi-nr,.ne-ndertim-nr,.komerciale-nr{
+    	font-size:11px;
+    }
+    .IMGPremiosH {
+	    margin: 0px 40% 0px 40%;
+	}
+	.hiddenslide {
+	    bottom: -15px;
+	    width: 84.5%;
+	    left: 30px;
+	}
+	.international{
+		display: none!important;
+	}
+	.spot05 .row {
+		padding: 0px 30px;
+	}
+	.spot05 .row .col-md-3{
+		margin-top: 30px;
+	}
+	.spot04 .row, .spot02 .row{
+		margin-right: 0px;
+	}
+	.nav.nav-tabs {
+    margin-right: 0px;
+	}
+	.tab-pane .form-group{
+    	padding: 14px 0 0 10px;
+    }
+
+}
+@media screen and (max-width: 420px){
+	.spot01-img{
+		display: none;
+	}
+	.spot02-background{
+		margin-top: 130px;
+	}
+	.kerkobtn {
+	    padding: 8px 10px;
+	}
+	#home .form-group div.col-sm-10, #profile .form-group div.col-sm-10, #messages .form-group div.col-sm-10 {
+	    width: 75%;
+	}
+	#kerko-prone {
+	    margin-left: 0px;
+	}
+	.container-fluid.spot04-background{
+    	display: none;
+    }
+    .spot02 .row{
+    	width: 100%;
+    }
+    .spot02 .row ul{
+    	width: 100%;
+    }
+
+    
+
+
+}
+
+
+
