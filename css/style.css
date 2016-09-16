@@ -249,138 +249,269 @@ path.jvectormap-region.jvectormap-element:hover {
 	margin-top:20px;
 }
 .spot01{
-	height: 335px;
+	min-height: 335px;
 	padding-left: 0px;
 }
+
+#top-content li{
+  background-color: rgba(0, 0, 0, 0.498039);
+  margin: 19px 4px;
+  width: 125px;
+    height: 125px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(http://photosv5.century21.fr/theme/generic/css/images/bg_navUNIVERS-li.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    border-radius: 12px;
+    float: left;
+    margin: 19px 18px;
+    text-align: center;
+    list-style:none;
+}
+#top-content li h2 {
+    font-size: 16px;
+    line-height: 16px;
+    background: url(http://photosv5.century21.fr/theme/generic/css/images/bg_navUNIVERS-li-h2.png) no-repeat 0 0;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+#top-content li h2 a {
+    width: 125px;
+    height: 35px;
+    padding: 90px 0 0 0;
+    display: block;
+    color:white;
+    font-weight: bold;
+}
+#top-content li:first-child{
+  margin-left:0;
+}
+.main-tabs{
+    height: 164px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.1);
+}
 .spot01-img{
-	background-image: url(../img/spot01.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: url(http://photosv5.century21.fr/multimedias/images/nuit_09_2016.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
-.spot01-menu1{
-	list-style: none;
-	color: #fff;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    padding-top: 35px;
-    padding-left: 0px;
+
+.search-slide{
+  height: 265px;
+  margin-bottom:70px;
+  margin-top:50px;
+  background: #4c4b4a url(http://photosv5.century21.fr/theme/generic/css/images/bg_sliderHOME-section.jpg) repeat-x 0 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+  padding:6px 6px 30px 6px;
 }
-.spot01-menu2{
-	list-style: none;
-	color: #fff;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    padding-top: 35px;
-    padding-left: 70px;
+.search-slide form{
+  background:white;
+  height:100%;
+}
+.search-pop li{
+  list-style: none;
+  display: block;
+  height: 40px;
+}
+.numBox > label, .pieces > label{
+    width: 170px;
+    float: left;
+}
+.check-btn{
+    float: left;
+    margin: 4px 8px 2px 0;
+    display: inline-block;
+}
+.check-btn div{
+  float: right;
+  line-height: 25px;
+}
+.check-btn div:first-child{
+  margin-right:5px;
+}
+span.ui-slider-handle{
+  border-radius: 50px;
+  height: 27px!important;
+  width: 27px!important;
+  margin-top:-4px;
+  background: #fff!important;
+}
+span.ui-slider-handle:focus{
+  outline:none;
+}
+span.ui-slider-handle:hover{
+  background:#fdf5ce!important;
+  border:1px solid #fbc090; 
+  cursor:pointer;
+}
+.ui-slider-range{
+  background-color:#f7b850!important;
+  border: 1px solid #858585;
+  height: 12px!important;
 }
 
-.apartamente,.shtepi,.ne-ndertim,.komerciale,.jashte-vendit,.projekte-rezidenciale,.prona-luks,.troje,.zone-turistike,.apartamente-qira{
-	display:inline-block;
-	background-position: 0px 0px;
-    padding: 0px;
-    margin: 0px;
-    height: 50px;
-    width: 50px;
+.check-btn input[type="checkbox"]{
+    height: 17px;
+    width: 17px;
+    border-radius: 3px;
+}
+.check-btn input[type="checkbox"]:focus{
+  outline:none;
+}
+
+
+.check-btn input[type="checkbox"]:checked + label::after {
+   content: '';
+   position: absolute;
+   width: 7px;
+   height: 12px;
+   background: rgba(0, 0, 0, 0);
+   top: 0.6ex;
+   left: 0.7ex;
+   border: 3px solid orange;
+   border-top: none;
+   border-right: none;
+   -webkit-transform: rotate(45deg) scale(-1, 1);
+   -moz-transform: rotate(45deg) scale(-1, 1);
+   -o-transform: rotate(45deg) scale(-1, 1);
+   -ms-transform: rotate(45deg) scale(-1, 1);
+   transform: rotate(45deg) scale(-1, 1);
+}
+
+
+
+.check-btn input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
+}
+
+.check-btn input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -ms-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-timing-function: linear, ease-in;
-}
-.apartamente-nr,.shtepi-nr,.ne-ndertim-nr,.komerciale-nr{
-	font-size: 14px;
-    font-weight: 300;
-}
-li:hover{
-	color: #ecb429;
-	cursor: pointer;
-
-}li span{
-	vertical-align: middle;
-}
-.apartamente{
-	background: url(http://www.century21albania.com/themes/13660/images/im01.png) no-repeat;
-}
-.shtepi{
-	background: url(http://www.century21albania.com/themes/13660/images/im02.png) no-repeat;
-}
-.ne-ndertim{
-	background: url(http://www.century21albania.com/themes/13660/images/im03.png) no-repeat;
-}
-.komerciale{
-	background: url(http://www.century21albania.com/themes/13660/images/im04.png) no-repeat;
-}
-.jashte-vendit{
-	background: url(http://www.century21albania.com/themes/13660/images/im05.png) no-repeat;
-}
-.apartamente-qira{
-	background: url(http://www.century21albania.com/themes/13660/images/im06.png) no-repeat;
-}
-.zone-turistike{
-	background: url(http://www.century21albania.com/themes/13660/images/im07.png) no-repeat;
-}
-.troje{
-	background: url(http://www.century21albania.com/themes/13660/images/im08.png) no-repeat;
-}
-.prona-luks{
-	background: url(http://www.century21albania.com/themes/13660/images/im09.png) no-repeat;
-}
-.projekte-rezidenciale{
-	background: url(http://www.century21albania.com/themes/13660/images/im10.png) no-repeat;
-}
-li:hover .apartamente{
-	background: url(http://www.century21albania.com/themes/13660/images/im01.png) no-repeat;
-	background-position: 50% 100% !important;
-}
-li:hover .shtepi{
-	background: url(http://www.century21albania.com/themes/13660/images/im02.png) no-repeat;
-	background-position: 50% 100% !important;
-}
-li:hover .ne-ndertim{
-	background: url(http://www.century21albania.com/themes/13660/images/im03.png) no-repeat;
-	background-position: 50% 100% !important;
-}
-li:hover .komerciale{
-	background: url(http://www.century21albania.com/themes/13660/images/im04.png) no-repeat;
-	background-position: 50% 100% !important;
-}
-li:hover .jashte-vendit{
-	background: url(http://www.century21albania.com/themes/13660/images/im05.png) no-repeat;
-	background-position: 50% 100% !important;
-}
-li:hover .apartamente-qira{
-	background: url(http://www.century21albania.com/themes/13660/images/im06.png) no-repeat;
-	background-position: 50% 100% !important;
-}
-li:hover .zone-turistike{
-	background: url(http://www.century21albania.com/themes/13660/images/im07.png) no-repeat;
-	background-position: 50% 100% !important;
-}
-li:hover .troje{
-	background: url(http://www.century21albania.com/themes/13660/images/im08.png) no-repeat;
-	background-position: 50% 100% !important;
-}
-li:hover .prona-luks{
-	background: url(http://www.century21albania.com/themes/13660/images/im09.png) no-repeat;
-	background-position: 50% 100% !important;
-}
-li:hover .projekte-rezidenciale{
-	background: url(http://www.century21albania.com/themes/13660/images/im10.png) no-repeat;
-	background-position: 50% 100% !important;
 }
 
+.check-btn input[type="checkbox"] + label::before {
+   content: "";
+   display: inline-block;
+   vertical-align: -25%;
+   height: 17px;
+   width: 17px;
+   background-color: white;
+   border: 1px solid rgb(166, 166, 166);
+   border-radius: 3px;
+   margin-right: 0.5em;
+}
+
+
+
+.tooltiptext,.tooltiptext1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 250%;
+    left: 50%;
+    margin-left: -60px;
+    width:auto;
+    min-width:50px;
+}
+.tooltiptext::after , .tooltiptext1:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.or div .tokenfield {
+  height: 25px;
+  min-height: 25px;
+}
+.or div .tokenfield .token{
+  margin: -3px 5px 5px 0;
+  min-height: 16px;
+  height: 17px;
+
+}
+
+.or div .tokenfield .token span  {
+  margin-top: -3px;
+  font-size:14px;
+}
+.or div .tokenfield .token a{
+  margin-top: -3px;
+}
+.form-control{
+  padding:6px 5px;
+}
+
+
+
+
+
+
+
+.or >label, .max-rent >label, .surface >label{
+  float:left;
+}
+.or input{
+  outline: none;
+  width: 265px;
+  padding: 0px;
+  background-color: white;
+  margin: 2px 0;
+  font-size: 11px;
+}
+.tokenfield{
+  width: 265px!important;
+  float: left;
+  margin-left: 150px;
+}
+
+#search-items .btn{
+  padding: 3px 12px;
+  background-color:rgb(115, 115, 115);
+  color:white;
+}
+#search-items a{
+  margin-right:10px;
+  text-decoration: underline;
+  color: #000;
+  font-size:13px;
+}
+
+
+#slider-range-min,#surface-range-min{
+  width:265px;
+  float: left;
+  background-color: #f8f8f8;
+}
+#surface-range-min{
+  margin-left:90px;
+}
+#slider-range-min{
+  margin-left:120px;
+}
+#slider-range-min, #surface-range-min{
+  height: 13px;
+}
 .spot02{
 	background-color: #666666;
 	max-height: 150px;
