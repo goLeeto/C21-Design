@@ -251,6 +251,7 @@ path.jvectormap-region.jvectormap-element:hover {
 .spot01{
 	min-height: 335px;
 	padding-left: 0px;
+  height:90vh;
 }
 
 #top-content li{
@@ -294,8 +295,11 @@ path.jvectormap-region.jvectormap-element:hover {
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    margin-left:0px;
 }
 .spot01-img{
+
   background: url(http://photosv5.century21.fr/multimedias/images/nuit_09_2016.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -1108,6 +1112,7 @@ nav ul li ul li:last-child{
     }
     .spot01{
     	width:auto;
+
     }
     .spot03-background {
     	height: auto;
