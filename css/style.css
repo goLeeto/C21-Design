@@ -265,7 +265,7 @@ path.jvectormap-region.jvectormap-element:hover {
     background-position: 0 0;
     border-radius: 12px;
     float: left;
-    margin: 19px 18px;
+    margin: 19px 10px;
     text-align: center;
     list-style:none;
 }
@@ -287,7 +287,7 @@ path.jvectormap-region.jvectormap-element:hover {
     font-weight: bold;
 }
 #top-content li:first-child{
-  margin-left:0;
+  margin-left: 2.7vw;
 }
 .main-tabs{
     height: 164px;
@@ -300,12 +300,16 @@ path.jvectormap-region.jvectormap-element:hover {
 }
 .spot01-img{
 
-  background: url(http://photosv5.century21.fr/multimedias/images/nuit_09_2016.jpg);
+  background: url(http://photosv5.century21.fr/multimedias/images/midi_09_2016.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 }
-
+.search-options{
+  padding: 0px 80px;
+  position: relative;
+  z-index: 2;
+}
 
 .search-slide{
   height: 265px;
@@ -319,6 +323,43 @@ path.jvectormap-region.jvectormap-element:hover {
 .search-slide form{
   background:white;
   height:100%;
+  width:63%;
+  display: inline-block;
+  float: left;
+  margin-right: 6px;
+
+}
+.email-alert{
+  background:white;
+  height:100%;
+  width:36.25%;
+  display: inline-block;
+    text-align: center;
+}
+.email-background{
+  background: url(http://photosv5.century21.fr/theme/generic/css/images/picto_alerteMAIL-XL.png) no-repeat;
+  width: 54px;
+  height: 54px;
+  margin: 10px auto;
+}
+.email-alert .btn:hover{
+  background-color: rgb(164, 164, 164);
+}
+.email-alert .btn{
+  background-color: rgb(115, 115, 115);
+  color: white;
+  margin: 10px 5px;
+}
+.email-alert h3{
+  font-weight: bold;
+  margin:20px 0;
+}
+.email-alert p{
+  margin:10px 5px;
+}
+.footer-text{
+  text-align: center;
+  color:white;
 }
 .search-pop li{
   list-style: none;
@@ -328,6 +369,7 @@ path.jvectormap-region.jvectormap-element:hover {
 .numBox > label, .pieces > label{
     width: 170px;
     float: left;
+    font-size: 17px;
 }
 .check-btn{
     float: left;
@@ -426,12 +468,12 @@ span.ui-slider-handle:hover{
     border-radius: 6px;
     padding: 0px 0;
     position: absolute;
-    z-index: 1;
     bottom: 250%;
     left: 50%;
     margin-left: -60px;
     width:auto;
     min-width:50px;
+    z-index: 4;
 }
 .tooltiptext::after , .tooltiptext1:after {
     content: "";
@@ -447,14 +489,19 @@ span.ui-slider-handle:hover{
 .or div .tokenfield {
   height: 25px;
   min-height: 25px;
+  position: absolute;
+  z-index: 3;
+  overflow: hidden;
 }
 .or div .tokenfield .token{
   margin: -3px 5px 5px 0;
   min-height: 16px;
   height: 17px;
-
 }
 
+.tokenfield.form-control .token-input{
+  margin-top:-5px;
+}
 .or div .tokenfield .token span  {
   margin-top: -3px;
   font-size:14px;
@@ -474,6 +521,8 @@ span.ui-slider-handle:hover{
 
 .or >label, .max-rent >label, .surface >label{
   float:left;
+  font-size: 17px;
+
 }
 .or input{
   outline: none;
@@ -493,6 +542,9 @@ span.ui-slider-handle:hover{
   padding: 3px 12px;
   background-color:rgb(115, 115, 115);
   color:white;
+}
+#search-items .btn:hover{
+  background-color: rgb(164, 164, 164);
 }
 #search-items a{
   margin-right:10px;
@@ -515,6 +567,16 @@ span.ui-slider-handle:hover{
 }
 #slider-range-min, #surface-range-min{
   height: 13px;
+}
+
+.current-arrow{
+  position: absolute;
+  left:150px;
+  width: 47px;
+  height: 24px;
+  background: url(http://photosv5.century21.fr/theme/generic/css/images/bg_cursorSLIDERHOME.png) no-repeat 0 0;
+  transform: rotate(180deg);
+  z
 }
 .spot02{
 	background-color: #666666;

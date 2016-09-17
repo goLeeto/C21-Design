@@ -161,13 +161,21 @@
                   <li id="search-items">
                     <a href="#">Click here to go somewhere</a>
                     <a href="#">Click here to go somewhere else</a>
-                    <button class="btn btn-default">Search</button>
+                    <input type="submit" class="btn btn-default" value="Search">
                   </li>
 
                 </ul>
               </form>
+              <div class="email-alert">
+                <h3>Email Alert</h3>
+                <div class="email-background"></div>
+                <p>Get a preview ads that may interest you</p>
+                <a href="#" class="btn btn-default">Create alert</a>
+              </div>
+              <div class="footer-text"><a href="#"><h5>Discover the universe <b> Buy</b></h5></a></div>
             </div>
           </div>
+          <div class="current-arrow"></div>
         </div>
 
       </div>
@@ -541,6 +549,7 @@ var maxVal = 200000;
         value: 37,
         min: 0,
         max: maxVal,
+        step: 5000,
         slide: function( event, ui ) {
           $( "#amount" ).val( "$" + ui.value );
           $('.tooltiptext').html($( "#slider-range-min" ).slider( "value" )+"€");
@@ -593,8 +602,84 @@ var maxVal = 200000;
   } );
 
 
+    var topOff = $('.search-options').offset().top;
+    topOff -= 70;
+    $('.current-arrow').css('top', topOff + 'px');
 
     
+    
+    </script>
+    <script>
+      $('#top-content li').each(function(){
+        $(this).mouseover(function(){
+  
+        var currentOffset = $(this).offset().left;
+        currentOffset += 40;
+        
+
+      $('.current-arrow').animate({left: (currentOffset)+'px'},300,"linear");
+
+
+    });
+    });
+
+      $('.tokenfield').mouseover(function(){
+        $('.tokenfield').css({
+                    'height':'auto',
+                    'overflow':'initial'
+                    });
+      });
+      $('.tokenfield').mouseleave(function(){
+         $('#ui-id-1').on('mouseover',function(){
+            $('#ui-id-1').mouseleave(function(){
+              $('.tokenfield').css({
+                    'height':'25px',
+                    'overflow':'hidden'
+                    });
+            });
+              
+      });
+
+      $('.tokenfield').focusout(function(){
+          $('.tokenfield').css({
+                    'height':'25px',
+                    'overflow':'hidden'
+                    });
+      });
+      
+      if($('#ui-id-1').is(":visible")){ 
+
+      }else{
+        $('.tokenfield').css({
+                    'height':'25px',
+                    'overflow':'hidden'
+                    });
+      }
+      });
+
+    </script>
+    <!-- script for changing the background based in time -->
+    <script>
+      var date = new Date();
+      var hour = date.getHours();
+      if(hour > 7 && hour < 19){
+        //it's day
+        $('.spot01-img').css({
+          'background':'url(http://photosv5.century21.fr/multimedias/images/midi_09_2016.jpg)',
+          'background-repeat': 'no-repeat',
+          'background-position': 'top center',
+          'background-size': 'cover'
+          });
+      }else{
+        //it's night
+        $('.spot01-img').css({
+          'background':'url(http://photosv5.century21.fr/multimedias/images/nuit_09_2016.jpg)',
+          'background-repeat': 'no-repeat',
+          'background-position': 'top center',
+          'background-size': 'cover'
+          });
+      }
+      
     </script>
   </body>
 </html>
