@@ -68,112 +68,596 @@
 
       <div class="container-fluid spot01-img">
         <div class="container-fluid spot01">
-          <div class="row main-tabs">
-            <div class="container">
-              <ul id="top-content">
-              <li class="pronat"><h2><a href="#">Prona</a></h2></li>
-              <li class="pronat"><h2><a href="#">Prona</a></h2></li>
-              <li class="pronat"><h2><a href="#">Prona</a></h2></li>
-              <li class="pronat"><h2><a href="#">Prona</a></h2></li>
-              <li class="pronat"><h2><a href="#">Prona</a></h2></li>
-              <li class="pronat"><h2><a href="#">Prona</a></h2></li>
-              <li class="pronat"><h2><a href="#">Prona</a></h2></li>
-            </ul>
-            </div>
-          </div>
 
           <div class="container search-options">
-            <div class="search-slide">
-              <form action="#" method="post">
-                <ul class="search-pop">
+            <ul class="search-containers">
 
-                  <li class="numBox">
-                    <label>What</label>
-                    <div class="check-btn">
-                      <input id="house-check" type="checkbox">
-                      <label for="house-check"></label>
-                      <div>House</div>
-                    </div>
-                    <div class="check-btn">
-                      <input id="apartment-check" type="checkbox">
-                      <label for="apartment-check"></label>
-                      <div>Apartment</div>
-                    </div>
-                  </li>
+              <!-- ********************************** -->
+              <!-- first pop up li element -->
+              <!-- ********************************** -->
 
-                  <li class="or">
-                    <label >OR</label>
-                    <div>
-                      <input type="text" class="form-control" id="tokenfield" value="red,green,blue" />
-                    </div>
-                  </li>
+              <li>
+                <div class="search-slide">
+                  <form action="#" method="post">
+                    <ul class="search-pop">
 
-                  <li class="max-rent">
-                    <label>Amount</label>
-                    <div>
-                      <input type="text" id="amount" readonly style="display:none;">
-                      <div id="slider-range-min">
-                       <span class="tooltiptext">Tooltip text</span>
+                      <li class="numBox">
+                        <label>What</label>
+                        <div class="check-btn">
+                          <input id="house-check" type="checkbox">
+                          <label for="house-check"></label>
+                          <div>House</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="apartment-check" type="checkbox">
+                          <label for="apartment-check"></label>
+                          <div>Apartment</div>
+                        </div>
+                      </li>
+
+                      <li class="or">
+                        <label >OR</label>
+                        <div>
+                          <input type="text" class="form-control" id="tokenfield" placeholder="Search for places" value="red,green,blue" />
+                        </div>
+                      </li>
+
+                      <li class="max-rent">
+                        <label>Amount</label>
+                        <div>
+                          <input type="text" id="amount" readonly style="display:none;">
+                          <div id="slider-range-min" class="first">
+                           <span class="customTooltips tooltiptext10">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="surface">
+                        <label>Surface Mini</label>
+                        <div>
+                          <input type="text" id="surface" readonly style="display:none;">
+                          <div id="surface-range-min" class="second">
+                            <span class="customTooltips tooltiptext11">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="pieces">
+                        <label>Number of pieces</label>
+                        <div class="check-btn">
+                          <input id="1" type="checkbox">
+                          <label for="1"></label>
+                          <div>1</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="2" type="checkbox">
+                          <label for="2"></label>
+                          <div>2</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="3" type="checkbox">
+                          <label for="3"></label>
+                          <div>3</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="4" type="checkbox">
+                          <label for="4"></label>
+                          <div>4</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="5" type="checkbox">
+                          <label for="5"></label>
+                          <div>5+</div>
+                        </div>
+                      </li>
+
+                      <li id="search-items">
+                        <a href="#">Click here to go somewhere</a>
+                        <a href="#">Click here to go somewhere else</a>
+                        <input type="submit" class="btn btn-default" value="Search">
+                      </li>
+                    </ul>
+                  </form>
+                  <div class="email-alert">
+                    <h3>Email Alert</h3>
+                    <div class="email-background"></div>
+                    <p>Get a preview ads that may interest you</p>
+                    <a href="#" class="btn btn-default">Create alert</a>
+                  </div>
+                  <div class="footer-text"><a href="#"><h5>Discover the universe <b> Buy</b></h5></a></div>
+                </div>
+              </li>
+
+              <!-- ********************************** -->
+              <!-- second pop up li element -->
+              <!-- ********************************** -->
+
+              <li>
+                <div class="search-slide">
+                  <form action="#" method="post">
+                    <ul class="search-pop">
+
+                      <li class="numBox">
+                        <label>What</label>
+                        <div class="check-btn">
+                          <input id="house-check2" type="checkbox">
+                          <label for="house-check2"></label>
+                          <div>House</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="apartment-check2" type="checkbox">
+                          <label for="apartment-check2"></label>
+                          <div>Apartment</div>
+                        </div>
+                      </li>
+
+                      <li class="or">
+                        <label >OR</label>
+                        <div>
+                          <input type="text" class="form-control" id="tokenfield2" value="red,green,blue" />
+                        </div>
+                      </li>
+
+                      <li class="max-rent">
+                        <label>Amount</label>
+                        <div>
+                          <input type="text" id="amount2" readonly style="display:none;">
+                          <div id="slider-range-min20" class="first">
+                           <span class="tooltiptext20 customTooltips">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="surface">
+                        <label>Surface Mini</label>
+                        <div>
+                          <input type="text" id="surface2" readonly style="display:none;">
+                          <div id="surface-range-min21" class="second">
+                            <span class="tooltiptext21 customTooltips">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="pieces">
+                        <label>Number of pieces</label>
+                        <div class="check-btn">
+                          <input id="21" type="checkbox">
+                          <label for="21"></label>
+                          <div>1</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="22" type="checkbox">
+                          <label for="22"></label>
+                          <div>2</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="23" type="checkbox">
+                          <label for="23"></label>
+                          <div>3</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="24" type="checkbox">
+                          <label for="24"></label>
+                          <div>4</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="25" type="checkbox">
+                          <label for="25"></label>
+                          <div>5+</div>
+                        </div>
+                      </li>
+
+                      <li id="search-items">
+                        <a href="#">Click here to go somewhere</a>
+                        <a href="#">Click here to go somewhere else</a>
+                        <input type="submit" class="btn btn-default" value="Search">
+                      </li>
+                    </ul>
+                  </form>
+                  <div class="email-alert">
+                    <h3>Email Alert</h3>
+                    <div class="email-background"></div>
+                    <p>Get a preview ads that may interest you</p>
+                    <a href="#" class="btn btn-default">Create alert</a>
+                  </div>
+                  <div class="footer-text"><a href="#"><h5>Discover the world  <b> Rent</b></h5></a></div>
+                </div>
+              </li>
+
+              <!-- ********************************** -->
+              <!-- Third pop up li element -->
+              <!-- ********************************** -->
+              <li>
+                <div class="search-slide">
+                  <form action="#" method="post">
+                    <ul class="search-pop">
+
+                      <li class="numBox">
+                        <label>What</label>
+                        <div class="check-btn">
+                          <input id="house-check3" type="checkbox">
+                          <label for="house-check3"></label>
+                          <div>House</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="apartment-check3" type="checkbox">
+                          <label for="apartment-check3"></label>
+                          <div>Apartment</div>
+                        </div>
+                      </li>
+
+                      <li class="or">
+                        <label >OR</label>
+                        <div>
+                          <input type="text" class="form-control" id="tokenfield3" value="red,green,blue" />
+                        </div>
+                      </li>
+
+                      <li class="max-rent">
+                        <label>Amount</label>
+                        <div>
+                          <input type="text" id="amount3" readonly style="display:none;">
+                          <div id="slider-range-min30" class="first">
+                           <span class="tooltiptext30 customTooltips">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="surface">
+                        <label>Surface Mini</label>
+                        <div>
+                          <input type="text" id="surface3" readonly style="display:none;">
+                          <div id="surface-range-min31" class="second">
+                            <span class="tooltiptext31 customTooltips">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="pieces">
+                        <label>Number of pieces</label>
+                        <div class="check-btn">
+                          <input id="31" type="checkbox">
+                          <label for="31"></label>
+                          <div>1</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="32" type="checkbox">
+                          <label for="32"></label>
+                          <div>2</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="33" type="checkbox">
+                          <label for="33"></label>
+                          <div>3</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="34" type="checkbox">
+                          <label for="34"></label>
+                          <div>4</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="35" type="checkbox">
+                          <label for="35"></label>
+                          <div>5+</div>
+                        </div>
+                      </li>
+
+                      <li id="search-items">
+                        <a href="#">Click here to go somewhere</a>
+                        <a href="#">Click here to go somewhere else</a>
+                        <input type="submit" class="btn btn-default" value="Search">
+                      </li>
+                    </ul>
+                  </form>
+                  <div class="email-alert">
+                    <h3>Email Alert</h3>
+                    <div class="email-background"></div>
+                    <p>Get a preview ads that may interest you</p>
+                    <a href="#" class="btn btn-default">Create alert</a>
+                  </div>
+                  <div class="footer-text"><a href="#"><h5>Discover the world  <b> Rent</b></h5></a></div>
+                </div>
+              </li>
+              
+              <!-- ********************************** -->
+              <!-- Fourth pop up li element -->
+              <!-- ********************************** -->
+
+
+              <li>
+                <div class="search-slide">
+                  <form action="#" method="post">
+                    <ul class="search-pop">
+
+                      <li class="numBox">
+                        <label>What</label>
+                        <div class="check-btn">
+                          <input id="house-check4" type="checkbox">
+                          <label for="house-check4"></label>
+                          <div>House</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="apartment-check4" type="checkbox">
+                          <label for="apartment-check4"></label>
+                          <div>Apartment</div>
+                        </div>
+                      </li>
+
+                      <li class="or">
+                        <label >OR</label>
+                        <div>
+                          <input type="text" class="form-control" id="tokenfield4" value="red,green,blue" />
+                        </div>
+                      </li>
+
+                      <li class="max-rent">
+                        <label>Amount</label>
+                        <div>
+                          <input type="text" id="amount4" readonly style="display:none;">
+                          <div id="slider-range-min40" class="first">
+                           <span class="tooltiptext40 customTooltips">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="surface">
+                        <label>Surface Mini</label>
+                        <div>
+                          <input type="text" id="surface4" readonly style="display:none;">
+                          <div id="surface-range-min41" class="second">
+                            <span class="tooltiptext41 customTooltips">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="pieces">
+                        <label>Number of pieces</label>
+                        <div class="check-btn">
+                          <input id="41" type="checkbox">
+                          <label for="41"></label>
+                          <div>1</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="42" type="checkbox">
+                          <label for="42"></label>
+                          <div>2</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="43" type="checkbox">
+                          <label for="43"></label>
+                          <div>3</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="44" type="checkbox">
+                          <label for="44"></label>
+                          <div>4</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="45" type="checkbox">
+                          <label for="45"></label>
+                          <div>5+</div>
+                        </div>
+                      </li>
+
+                      <li id="search-items">
+                        <a href="#">Click here to go somewhere</a>
+                        <a href="#">Click here to go somewhere else</a>
+                        <input type="submit" class="btn btn-default" value="Search">
+                      </li>
+                    </ul>
+                  </form>
+                  <div class="email-alert">
+                    <h3>Email Alert</h3>
+                    <div class="email-background"></div>
+                    <p>Get a preview ads that may interest you</p>
+                    <a href="#" class="btn btn-default">Create alert</a>
+                  </div>
+                  <div class="footer-text"><a href="#"><h5>Discover the world  <b> Rent</b></h5></a></div>
+                </div>
+              </li>
+
+
+
+              <!-- ********************************** -->
+              <!-- number 5 pop up li element -->
+              <!-- ********************************** -->
+
+              <li>
+                <div class="search-slide">
+                  <form action="#" method="post">
+                    <ul class="search-pop">
+
+                      <li class="numBox">
+                        <label>What</label>
+                        <div class="check-btn">
+                          <input id="house-check5" type="checkbox">
+                          <label for="house-check5"></label>
+                          <div>House</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="apartment-check5" type="checkbox">
+                          <label for="apartment-check5"></label>
+                          <div>Apartment</div>
+                        </div>
+                      </li>
+
+                      <li class="or">
+                        <label >OR</label>
+                        <div>
+                          <input type="text" class="form-control" id="tokenfield5" value="red,green,blue" />
+                        </div>
+                      </li>
+
+                      <li class="max-rent">
+                        <label>Amount</label>
+                        <div>
+                          <input type="text" id="amount5" readonly style="display:none;">
+                          <div id="slider-range-min50" class="first">
+                           <span class="tooltiptext50 customTooltips">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="surface">
+                        <label>Surface Mini</label>
+                        <div>
+                          <input type="text" id="surface5" readonly style="display:none;">
+                          <div id="surface-range-min51" class="second">
+                            <span class="tooltiptext51 customTooltips">Tooltip text</span>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="pieces">
+                        <label>Number of pieces</label>
+                        <div class="check-btn">
+                          <input id="51" type="checkbox">
+                          <label for="51"></label>
+                          <div>1</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="52" type="checkbox">
+                          <label for="52"></label>
+                          <div>2</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="53" type="checkbox">
+                          <label for="53"></label>
+                          <div>3</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="54" type="checkbox">
+                          <label for="54"></label>
+                          <div>4</div>
+                        </div>
+                        <div class="check-btn">
+                          <input id="55" type="checkbox">
+                          <label for="55"></label>
+                          <div>5+</div>
+                        </div>
+                      </li>
+
+                      <li id="search-items">
+                        <a href="#">Click here to go somewhere</a>
+                        <a href="#">Click here to go somewhere else</a>
+                        <input type="submit" class="btn btn-default" value="Search">
+                      </li>
+                    </ul>
+                  </form>
+                  <div class="email-alert">
+                    <h3>Email Alert</h3>
+                    <div class="email-background"></div>
+                    <p>Get a preview ads that may interest you</p>
+                    <a href="#" class="btn btn-default">Create alert</a>
+                  </div>
+                  <div class="footer-text"><a href="#"><h5>Discover the world  <b> Rent</b></h5></a></div>
+                </div>
+              </li>
+
+
+
+              <!-- ********************************** -->
+              <!-- number 6 pop up li element -->
+              <!-- ********************************** -->
+              <li>
+                <div class="search-slide">
+                  <div class="advertise-space">
+                
+                  </div>
+                  
+                  <div class="footer-text"><a href="#"><h5>Discover the world  <b> Rent</b></h5></a></div>
+                </div>
+              </li>
+              <!-- ********************************** -->
+              <!-- number 7 pop up li element -->
+              <!-- ********************************** -->
+
+              <li class="ads">
+                <div class="search-slide">
+                  <div class="container spot03">
+                    <div class="row text-center">
+                      <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-12">
+                        <div class="sticker stickerBall" id="stk1468409811972" >
+                          <div>Okazion!!</div>
+                        </div>
+                        <a href="#"><img src="http://images.egorealestate.com/320x240/7c8d5100-0000-0500-0000-0000029012a4.jpg">
+                          <div class="hiddenslide">
+                            <div class="tarpCaption"></div>
+                            <div class="tarpCaptionText">
+                              <h3 class="title">Zyra per shitje <span class="text"> Tirana>qender</span></h3>
+                              <h4 class="subtitle"> per shitje: <span class="text">500 000$</span></h4>
+                              <div class="text">
+                                OKAZION! Shiten ambiente per zyra me siperfaqje 289 m2 ne qender te Tiranes. Zyrat ndodhen ne katin e 5-te te nje qendre biznesi te Gjergji Center, Godina Infosoft. Te pajisura me certifikate pronesie. Per me shume informacion ju ftojme per nje…
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-12"> 
+                        <div class="sticker stickerBall" id="stk1468409811972"><div>Okazion!!</div></div>
+                        <a href="#">
+                          <img src="http://images.egorealestate.com/320x240/17c53e00-0000-0500-0000-000002a2b2ce.jpg">
+                          <div class="hiddenslide">
+                            <div class="tarpCaption"></div>
+                            <div class="tarpCaptionText">
+                              <h3 class="title">Zyra per shitje <span class="text"> Tirana>qender</span></h3>
+                              <h4 class="subtitle"> per shitje: <span class="text">500 000$</span></h4>
+                              <div class="text">
+                                OKAZION! Shiten ambiente per zyra me siperfaqje 289 m2 ne qender te Tiranes. Zyrat ndodhen ne katin e 5-te te nje qendre biznesi te Gjergji Center, Godina Infosoft. Te pajisura me certifikate pronesie. Per me shume informacion ju ftojme per nje…
+                              </div>
+                            </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
-                  </li>
+                  </div>
+                  <div class="footer-text"><a href="#"><h5>Discover the world  <b> Rent</b></h5></a></div>
 
-                  <li class="surface">
-                    <label>Surface Mini</label>
-                    <div>
-                      <input type="text" id="surface" readonly style="display:none;">
-                      <div id="surface-range-min">
-                        <span class="tooltiptext1">Tooltip text</span>
-                      </div>
+              </li>
+
+            </ul> 
+          </div>
+          <div class="row main-tabs">
+              <div class="container">
+                <ul id="top-content">
+                  <li class="pronat"><h2><a href="#">Blej</a></h2></li>
+                  <li class="pronat"><h2><a href="#">Qira</a></h2></li>
+                  <li class="pronat"><h2><a href="#">Zyra</a></h2></li>
+                  <li class="pronat"><h2><a href="#">Toka</a></h2></li>
+                  <li class="pronat"><h2><a href="#">Prona</a></h2></li>
+                  <li class="pronat"><a href="#"></a></li>
+                  <li class="pronat" id="advertise">
+                    <h2>
+                      <a href="#">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img src="http://2.imimg.com/data2/ME/VO/MY-3791406/real-property-solution-500x500.jpg" alt="Chania">
+                            </div>
+
+                            <div class="item">
+                              <img src="http://4.imimg.com/data4/GV/GC/MY-410458/loan-against-property-500x500.jpg" alt="Chania">
+                            </div>
+
+                            <div class="item">
+                              <img src="https://irp-cdn.multiscreensite.com/3b1b0211/dms3rep/multi/tablet/Property%20Inspection-500x500.jpg" alt="Flower">
+                            </div>
+
+                            <div class="item">
+                              <img src="http://propertybrochure.urban3d.netdna-cdn.com/wp-content/uploads/2016/09/02-500x500.jpg" alt="Flower">
+                            </div>
+                          </div>
+                        
                       
-                    </div>
-                  </li>
+                        </div>
 
-                  <li class="pieces">
-                    <label>Number of pieces</label>
-                    <div class="check-btn">
-                      <input id="1" type="checkbox">
-                      <label for="1"></label>
-                      <div>1</div>
-                    </div>
-                    <div class="check-btn">
-                      <input id="2" type="checkbox">
-                      <label for="2"></label>
-                      <div>2</div>
-                    </div>
-                    <div class="check-btn">
-                      <input id="3" type="checkbox">
-                      <label for="3"></label>
-                      <div>3</div>
-                    </div>
-                    <div class="check-btn">
-                      <input id="4" type="checkbox">
-                      <label for="4"></label>
-                      <div>4</div>
-                    </div>
-                    <div class="check-btn">
-                      <input id="5" type="checkbox">
-                      <label for="5"></label>
-                      <div>5+</div>
-                    </div>
+                      </a>
+                    </h2>
                   </li>
-
-                  <li id="search-items">
-                    <a href="#">Click here to go somewhere</a>
-                    <a href="#">Click here to go somewhere else</a>
-                    <input type="submit" class="btn btn-default" value="Search">
-                  </li>
-
                 </ul>
-              </form>
-              <div class="email-alert">
-                <h3>Email Alert</h3>
-                <div class="email-background"></div>
-                <p>Get a preview ads that may interest you</p>
-                <a href="#" class="btn btn-default">Create alert</a>
               </div>
-              <div class="footer-text"><a href="#"><h5>Discover the universe <b> Buy</b></h5></a></div>
-            </div>
           </div>
           <div class="current-arrow"></div>
         </div>
@@ -181,11 +665,11 @@
       </div>
 
 
-      <div class="container-fluid spot03-background">
+      <!-- <div class="container-fluid spot03-background">
         <div class="container spot03">
           <div class="row text-center">
             <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-12">
-              <div class="sticker stickerBall" id="stk1468409811972" ><div ">Okazion!!</div></div>
+              <div class="sticker stickerBall" id="stk1468409811972" ><div>Okazion!!</div></div>
               <a href="#"><img src="http://images.egorealestate.com/320x240/7c8d5100-0000-0500-0000-0000029012a4.jpg">
                 <div class="hiddenslide">
                   <div class="tarpCaption"></div>
@@ -217,176 +701,178 @@
             </div>
           </div>
         </div>
-        </div>
-        <div class="container-fluid spot04-background">
-          <div class="container spot04">
-            <div class="row">
-              <div class="col-md-2 col-xs-12 col-sm-3">
-                <a href="#">
-                  <h2 class="section">Agjenti i muajit</h2>
-                  <div class="thumbnailframe">
-                    <img class = 'thumbnail' src="http://media.egorealestate.com/512x384/092a6530-1863-4cf2-9db4-72d39ce2fd5d.jpg"> 
-                  </div>
-                  <div class="title">Artioj Kadiu</div>
-                  <div class="IMGPremiosH">
-                    <canvas id="myCanvas" width="80" height='80'></canvas>
-                    <script type="text/javascript">
-                      
-                      var ctx = document.getElementById('myCanvas').getContext('2d');
-                      
-                      var r = 21;
-                      var space = Math.PI / 12;
-                      
-                      ctx.beginPath();
-                      ctx.arc(39, 39, r, 0, Math.PI * 2, false);
-                      ctx.closePath();
-                      //ctx.fillStyle = "#F00";
-                      ctx.fillStyle = 'black';
-                      ctx.strokeStyle = 'transparent';
-                      ctx.lineWidth = 0;
-                      //ctx.fill();
-                      
-                      ctx.font = "bold 11px Arial";
-                      textCircle("Agjenti i Muajit",39,39,r,space,1);
-                      textCircle("qershor 2016",39,39,r,space);
-                      
-                      function textCircle(text,x,y,radius,space,top){
-                         space = space || 0;
-                         var numRadsPerLetter = (Math.PI - space * 2) / text.length;
-                         ctx.save();
-                         ctx.translate(x,y);
-                         var k = (top) ? 1 : -1; 
-                         ctx.rotate(-k * ((Math.PI - numRadsPerLetter) / 2 - space));
-                         for(var i=0;i<text.length;i++){
-                            ctx.save();
-                            ctx.rotate(k*i*(numRadsPerLetter));
-                            ctx.textAlign = "center";
-                           ctx.textBaseline = (!top) ? "top" : "bottom";
-                           ctx.fillText(text[i],0,-k*(radius));
-                            ctx.restore();
-                         }
-                         ctx.restore();
-                      }
+      </div> -->
 
-                    </script>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-2 col-xs-12 col-sm-3">
-                <a href="#">
-                  <h2 class="section">Zyra e muajit</h2>
-                  <div class="thumbnailframe">
-                    <img class = 'thumbnail' src="http://images.egorealestate.com/512x384/5aaf8722-f2c9-46df-9e6f-70fdadd6666e.jpg"> 
-                  </div>
-                  <div class="title">Century21 Botaniku</div>
-                  <div class="IMGPremiosH">
-                    <canvas id="myCanvasA" width="80" height='80'></canvas>
-                    <script type="text/javascript">
-                      
-                      var ctx = document.getElementById('myCanvasA').getContext('2d');
-                      
-                      var r = 21;
-                      var space = Math.PI / 12;
-                      
-                      ctx.beginPath();
-                      ctx.arc(39, 39, r, 0, Math.PI * 2, false);
-                      ctx.closePath();
-                      //ctx.fillStyle = "#F00";
-                      ctx.fillStyle = 'black';
-                      ctx.strokeStyle = 'transparent';
-                      ctx.lineWidth = 0;
-                      //ctx.fill();
-                      
-                      ctx.font = "bold 11px Arial";
-                      textCircle("Zyra e Muajit",39,39,r,space,1);
-                      textCircle("qershor 2016",39,39,r,space);
-                      
-                      function textCircle(text,x,y,radius,space,top){
-                         space = space || 0;
-                         var numRadsPerLetter = (Math.PI - space * 2) / text.length;
-                         ctx.save();
-                         ctx.translate(x,y);
-                         var k = (top) ? 1 : -1; 
-                         ctx.rotate(-k * ((Math.PI - numRadsPerLetter) / 2 - space));
-                         for(var i=0;i<text.length;i++){
-                            ctx.save();
-                            ctx.rotate(k*i*(numRadsPerLetter));
-                            ctx.textAlign = "center";
-                           ctx.textBaseline = (!top) ? "top" : "bottom";
-                           ctx.fillText(text[i],0,-k*(radius));
-                            ctx.restore();
-                         }
-                         ctx.restore();
-                      }
+      <div class="container-fluid spot04-background">
+        <div class="container spot04">
+          <div class="row">
+            <div class="col-md-2 col-xs-12 col-sm-3">
+              <a href="#">
+                <h2 class="section">Agjenti i muajit</h2>
+                <div class="thumbnailframe">
+                  <img class = 'thumbnail' src="http://media.egorealestate.com/512x384/092a6530-1863-4cf2-9db4-72d39ce2fd5d.jpg"> 
+                </div>
+                <div class="title">Artioj Kadiu</div>
+                <div class="IMGPremiosH">
+                  <canvas id="myCanvas" width="80" height='80'></canvas>
+                  <script type="text/javascript">
+                    
+                    var ctx = document.getElementById('myCanvas').getContext('2d');
+                    
+                    var r = 21;
+                    var space = Math.PI / 12;
+                    
+                    ctx.beginPath();
+                    ctx.arc(39, 39, r, 0, Math.PI * 2, false);
+                    ctx.closePath();
+                    //ctx.fillStyle = "#F00";
+                    ctx.fillStyle = 'black';
+                    ctx.strokeStyle = 'transparent';
+                    ctx.lineWidth = 0;
+                    //ctx.fill();
+                    
+                    ctx.font = "bold 11px Arial";
+                    textCircle("Agjenti i Muajit",39,39,r,space,1);
+                    textCircle("qershor 2016",39,39,r,space);
+                    
+                    function textCircle(text,x,y,radius,space,top){
+                       space = space || 0;
+                       var numRadsPerLetter = (Math.PI - space * 2) / text.length;
+                       ctx.save();
+                       ctx.translate(x,y);
+                       var k = (top) ? 1 : -1; 
+                       ctx.rotate(-k * ((Math.PI - numRadsPerLetter) / 2 - space));
+                       for(var i=0;i<text.length;i++){
+                          ctx.save();
+                          ctx.rotate(k*i*(numRadsPerLetter));
+                          ctx.textAlign = "center";
+                         ctx.textBaseline = (!top) ? "top" : "bottom";
+                         ctx.fillText(text[i],0,-k*(radius));
+                          ctx.restore();
+                       }
+                       ctx.restore();
+                    }
 
-                    </script>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 col-xs-12 col-sm-5">
-                <a href="#">
-                  <img class="img-responsive" src="http://media.egorealestate-cdn.com/Original/9987/ada0dad1-6c7b-402f-a174-e6ea9c649987.jpg">
-                </a>
-              </div>
+                  </script>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2 col-xs-12 col-sm-3">
+              <a href="#">
+                <h2 class="section">Zyra e muajit</h2>
+                <div class="thumbnailframe">
+                  <img class = 'thumbnail' src="http://images.egorealestate.com/512x384/5aaf8722-f2c9-46df-9e6f-70fdadd6666e.jpg"> 
+                </div>
+                <div class="title">Century21 Botaniku</div>
+                <div class="IMGPremiosH">
+                  <canvas id="myCanvasA" width="80" height='80'></canvas>
+                  <script type="text/javascript">
+                    
+                    var ctx = document.getElementById('myCanvasA').getContext('2d');
+                    
+                    var r = 21;
+                    var space = Math.PI / 12;
+                    
+                    ctx.beginPath();
+                    ctx.arc(39, 39, r, 0, Math.PI * 2, false);
+                    ctx.closePath();
+                    //ctx.fillStyle = "#F00";
+                    ctx.fillStyle = 'black';
+                    ctx.strokeStyle = 'transparent';
+                    ctx.lineWidth = 0;
+                    //ctx.fill();
+                    
+                    ctx.font = "bold 11px Arial";
+                    textCircle("Zyra e Muajit",39,39,r,space,1);
+                    textCircle("qershor 2016",39,39,r,space);
+                    
+                    function textCircle(text,x,y,radius,space,top){
+                       space = space || 0;
+                       var numRadsPerLetter = (Math.PI - space * 2) / text.length;
+                       ctx.save();
+                       ctx.translate(x,y);
+                       var k = (top) ? 1 : -1; 
+                       ctx.rotate(-k * ((Math.PI - numRadsPerLetter) / 2 - space));
+                       for(var i=0;i<text.length;i++){
+                          ctx.save();
+                          ctx.rotate(k*i*(numRadsPerLetter));
+                          ctx.textAlign = "center";
+                         ctx.textBaseline = (!top) ? "top" : "bottom";
+                         ctx.fillText(text[i],0,-k*(radius));
+                          ctx.restore();
+                       }
+                       ctx.restore();
+                    }
+
+                  </script>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-5">
+              <a href="#">
+                <img class="img-responsive" src="http://media.egorealestate-cdn.com/Original/9987/ada0dad1-6c7b-402f-a174-e6ea9c649987.jpg">
+              </a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="container-fluid spot05-background">
-          <div class="container spot05">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="pOfferIcon"></div>
-                <h3 class="title">shit ose jep me qira pronen tende!</h3>
-                <div class="text">Na kontaktoni, Prona juaj do te marketohet ne menyre profesionale nga ekspertet tane imobiliare</div>
-                <a class = "link" href="#">Listo Pronen Tende</a>
+      <div class="container-fluid spot05-background">
+        <div class="container spot05">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="pOfferIcon"></div>
+              <h3 class="title">shit ose jep me qira pronen tende!</h3>
+              <div class="text">Na kontaktoni, Prona juaj do te marketohet ne menyre profesionale nga ekspertet tane imobiliare</div>
+              <a class = "link" href="#">Listo Pronen Tende</a>
+            </div>
+            <div class="col-md-3">
+              <div class="pOfferIcon"></div>
+              <h3 class="title">Kerkese per prone!</h3>
+              <div class="text">Nuk keni gjetur cfare kerkoni ? Ler nje kerkese</div>
+              <a class = "link" href="#">Cfare po kerkoni</a>
+            </div>
+            <div class="col-md-3">
+              <div class="pOfferIcon"></div>
+              <h3 class="title">TE REJA DHE MUNDESI</h3>
+              <div class="text">Merr te rejat e fundit ne emailin tend</div>
+              
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Email">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">OK</button>
+                </span>
               </div>
-              <div class="col-md-3">
-                <div class="pOfferIcon"></div>
-                <h3 class="title">Kerkese per prone!</h3>
-                <div class="text">Nuk keni gjetur cfare kerkoni ? Ler nje kerkese</div>
-                <a class = "link" href="#">Cfare po kerkoni</a>
-              </div>
-              <div class="col-md-3">
-                <div class="pOfferIcon"></div>
-                <h3 class="title">TE REJA DHE MUNDESI</h3>
-                <div class="text">Merr te rejat e fundit ne emailin tend</div>
-                
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Email">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">OK</button>
-                  </span>
-                </div>
-              </div>
+            </div>
 
-              <div class="col-md-3">
-                <h4 class="section">BLOG</h4>
+            <div class="col-md-3">
+              <h4 class="section">BLOG</h4>
 
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <a href="#">Teknika Inovative në Rritjen e Performancës si Real Estate Agent</a>
-                    </div>
-                    <div class="item">
-                      <a href="#">Teknika Inovative në Rritjen e Performancës si Real Estate Agent</a>
-                    </div>
-                    <div class="item">
-                      <a href="#">Teknika Inovative në Rritjen e Performancës si Real Estate Agent</a>
-                    </div>
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <a href="#">Teknika Inovative në Rritjen e Performancës si Real Estate Agent</a>
                   </div>
-
-                  <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                  </ol>
+                  <div class="item">
+                    <a href="#">Teknika Inovative në Rritjen e Performancës si Real Estate Agent</a>
+                  </div>
+                  <div class="item">
+                    <a href="#">Teknika Inovative në Rritjen e Performancës si Real Estate Agent</a>
+                  </div>
                 </div>
-                <a href="#" class="link-carousel">Shikoni te gjitha te rejat!</a>
+
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
               </div>
+              <a href="#" class="link-carousel">Shikoni te gjitha te rejat!</a>
             </div>
           </div>
         </div>
+      </div>
+
       </div>
       <div class="container-fluid fmenu-background">
         <div class="container fmenu">
@@ -447,78 +933,78 @@
         </div>
       </div>
 
-        <div class="container-fluid footer-background">
-          <div class="container footer">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="col-md-3">
-                  <h4 class="title">Ekstra link</h4>
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Zyrat</a></li>
-                    <li><a href="#">Agjentet</a></li>
-                    <li><a href="#">Prona</a></li>
-                    <li><a href="#">Te preferuarat</a></li>
-                    <li><a href="#">Krahaso</a></li>
-                    <li><a href="#">Zhvillim</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
-                  <h4 class="title">Njesite</h4>
-                  <ul>
-                    <li><a href="#">Tirane <span>(100)</span></a></li>
-                    <li><a href="#">Durres <span>(100)</span></a></li>
-                    <li><a href="#">Sarande <span>(100)</span></a></li>
-                    <li><a href="#">Golem <span>(100)</span></a></li>
-                    <li><a href="#">Vore <span>(100)</span></a></li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
-                  <h4 class="title">Prona</h4>
-                  <ul>
-                    <li><a href="#">Apartament <span>(100)</span></a></li>
-                    <li><a href="#">Komerciale <span>(100)</span></a></li>
-                    <li><a href="#">Vile <span>(100)</span></a></li>
-                    <li><a href="#">Toke <span>(100)</span></a></li>
-                    <li><a href="#">Zyra/praktikantesh <span>(100)</span></a></li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
-                  <h4 class="title">Biznes</h4>
-                  <ul>
-                    <li><a href="#">Per shitje <span>(100)</span></a></li>
-                    <li><a href="#">Per qira <span>(100)</span></a></li>
-                    <li><a href="#">Qira sezonale <span>(100)</span></a></li>
-                    <li><a href="#">Qira e garantuar<span>(100)</span></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-2"> 
-                <h3 class="title">Follow us</h3>
-                <ul class="social-footer">
-                  <li><a href="#"><i class="fa fa-rss-square"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                  <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                  <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                  <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+      <div class="container-fluid footer-background">
+        <div class="container footer">
+          <div class="row">
+            <div class="col-md-10">
+              <div class="col-md-3">
+                <h4 class="title">Ekstra link</h4>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Zyrat</a></li>
+                  <li><a href="#">Agjentet</a></li>
+                  <li><a href="#">Prona</a></li>
+                  <li><a href="#">Te preferuarat</a></li>
+                  <li><a href="#">Krahaso</a></li>
+                  <li><a href="#">Zhvillim</a></li>
                 </ul>
               </div>
-              <div class="copyright col-md-12" style="color:#a8a8a8">
-              Copyright © 
-                <script type="text/javascript">
-                            now = new Date;
-                            theYear = now.getYear();
-                            if (theYear < 1900)
-                                theYear = theYear + 1900;
-                            document.write(theYear);
-                        </script>
+              <div class="col-md-3">
+                <h4 class="title">Njesite</h4>
+                <ul>
+                  <li><a href="#">Tirane <span>(100)</span></a></li>
+                  <li><a href="#">Durres <span>(100)</span></a></li>
+                  <li><a href="#">Sarande <span>(100)</span></a></li>
+                  <li><a href="#">Golem <span>(100)</span></a></li>
+                  <li><a href="#">Vore <span>(100)</span></a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4 class="title">Prona</h4>
+                <ul>
+                  <li><a href="#">Apartament <span>(100)</span></a></li>
+                  <li><a href="#">Komerciale <span>(100)</span></a></li>
+                  <li><a href="#">Vile <span>(100)</span></a></li>
+                  <li><a href="#">Toke <span>(100)</span></a></li>
+                  <li><a href="#">Zyra/praktikantesh <span>(100)</span></a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4 class="title">Biznes</h4>
+                <ul>
+                  <li><a href="#">Per shitje <span>(100)</span></a></li>
+                  <li><a href="#">Per qira <span>(100)</span></a></li>
+                  <li><a href="#">Qira sezonale <span>(100)</span></a></li>
+                  <li><a href="#">Qira e garantuar<span>(100)</span></a></li>
+                </ul>
               </div>
             </div>
+            <div class="col-md-2"> 
+              <h3 class="title">Follow us</h3>
+              <ul class="social-footer">
+                <li><a href="#"><i class="fa fa-rss-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+              </ul>
+            </div>
+            <div class="copyright col-md-12" style="color:#a8a8a8">
+            Copyright © 
+              <script type="text/javascript">
+                          now = new Date;
+                          theYear = now.getYear();
+                          if (theYear < 1900)
+                              theYear = theYear + 1900;
+                          document.write(theYear);
+                      </script>
+            </div>
           </div>
-        </div>  
+        </div>
+      </div>  
 
 
 
@@ -526,103 +1012,66 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/token-field.js"></script>
+    <script src="js/index.js"></script>
+    
+
     <script>
-
-    //Tags create and autocomplete
-      $('#tokenfield').tokenfield({
-  autocomplete: {
-    source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
-    delay: 100
-  },
-  showAutocompleteOnFocus: true
-})
-
-      // Code for initializing sliders
-var val;
-var maxVal = 200000;
-    $( function() {
-      $( "#slider-range-min" ).slider({
-        range: "min",
-        value: 37,
-        min: 0,
-        max: maxVal,
-        step: 5000,
-        slide: function( event, ui ) {
-          $( "#amount" ).val( "$" + ui.value );
-          $('.tooltiptext').html($( "#slider-range-min" ).slider( "value" )+"€");
-          val = $( "#slider-range-min" ).slider( "value" );
-          $('.tooltiptext').css('left',((val/maxVal)*100+15)+'%');
-
-        }
-      });
-      val = $( "#slider-range-min" ).slider( "value" );
-    $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
-    $('.tooltiptext').html($( "#slider-range-min" ).slider( "value" )+"€");
-    $('.tooltiptext').css('left',((val/maxVal)*100+15)+'%');
-    $('#slider-range-min').on('mouseover','.ui-slider-handle', function(){
-      $('.tooltiptext').css('visibility', 'visible');
-    });
-
-    $('#slider-range-min').on('mouseleave','.ui-slider-handle', function(){
-      $('.tooltiptext').css('visibility', 'hidden');
-    });
-
-    
-  } );
-
-    var maxSip = 400;
-    var sipVal;
-    $( function() {
-      $( "#surface-range-min" ).slider({
-        range: "min",
-        value: 50,
-        min: 1,
-        max: maxSip,
-        slide: function( event, ui ) {
-          $( "#surface" ).val( "$" + ui.value );
-          $('.tooltiptext1').html($( "#surface-range-min" ).slider( "value" )+"m<sup>2</sup>");
-          sipVal = $( "#surface-range-min" ).slider( "value" );
-          $('.tooltiptext1').css('left',((sipVal/maxSip)*100+15)+'%');
-        }
-      });
-    sipVal = $( "#surface-range-min" ).slider( "value" )
-    $( "#surface" ).val( "$" + $( "#surface-range-min" ).slider( "value" ) );
-    $('.tooltiptext1').html($( "#surface-range-min" ).slider( "value" )+"m<sup>2</sup>");
-    $('.tooltiptext1').css('left',((sipVal/maxSip)*100+15)+'%');
-    $('#surface-range-min').on('mouseover','.ui-slider-handle', function(){
-      $('.tooltiptext1').css('visibility', 'visible');
-    });
-
-    $('#surface-range-min').on('mouseleave','.ui-slider-handle', function(){
-      $('.tooltiptext1').css('visibility', 'hidden');
-    });
-  } );
-
-
-    var topOff = $('.search-options').offset().top;
-    topOff -= 70;
-    $('.current-arrow').css('top', topOff + 'px');
-
-    
-    
+      var topOff = $('.main-tabs').offset().top;
+      topOff -= 68;
+      $('.current-arrow').css('top', topOff + 'px');
     </script>
+
+
+
+
+    <!-- script for li boxes  -->
     <script>
+      $('.token-input').keyup(function(){
+       var inputValue = $('.token-input').val();
+      });
+      var index;
       $('#top-content li').each(function(){
         $(this).mouseover(function(){
-  
         var currentOffset = $(this).offset().left;
         currentOffset += 40;
-        
 
+      //arrow animation on li hover
+      $('.current-arrow').fadeIn(50);
       $('.current-arrow').animate({left: (currentOffset)+'px'},300,"linear");
+      
+      var isRepeated = false; 
+      if($(this).index()+1 == index){
+        isRepeated= true;
+      }
 
+      //search box show and hide on li hover
+      if(isRepeated == false){
+        index = $(this).index()+1;
+        $('.search-containers > li.active').fadeOut(30);
+        $('.search-containers > li.active').removeClass('active');
+        $('.search-containers > li:nth-child('+ index +')').fadeIn(30).addClass('active');
 
+      }
+      
+
+      });
     });
-    });
+      //on background click hide the search box
+      $('.spot01').click(function(e){
+        if(e.target == this){
+          $('.search-containers > li.active').fadeOut();
+          $('.search-containers > li.active').removeClass('active');
+          $('.current-arrow').hide();
+          index = -1;
+        }
+        
+      });
 
+
+
+      // on tags search box hover we need to change it's height
       $('.tokenfield').mouseover(function(){
         $('.tokenfield').css({
                     'height':'auto',
@@ -639,7 +1088,7 @@ var maxVal = 200000;
             });
               
       });
-
+         
       $('.tokenfield').focusout(function(){
           $('.tokenfield').css({
                     'height':'25px',
@@ -648,7 +1097,6 @@ var maxVal = 200000;
       });
       
       if($('#ui-id-1').is(":visible")){ 
-
       }else{
         $('.tokenfield').css({
                     'height':'25px',
@@ -663,7 +1111,7 @@ var maxVal = 200000;
       var date = new Date();
       var hour = date.getHours();
       if(hour > 7 && hour < 19){
-        //it's day
+        //it's day 
         $('.spot01-img').css({
           'background':'url(http://photosv5.century21.fr/multimedias/images/midi_09_2016.jpg)',
           'background-repeat': 'no-repeat',
@@ -679,6 +1127,20 @@ var maxVal = 200000;
           'background-size': 'cover'
           });
       }
+      //changing slider speed for advertising images
+      $('.carousel').carousel({
+        interval: 1000 * 2.5
+      });
+
+      //changing the header based on scroll
+      $(document).scroll(function(){
+        var test = $(document).scrollTop();
+        if(test > 50){
+          $('.yellow-header').addClass('addBackground');
+        }else{
+          $('.addBackground').removeClass('addBackground');
+        }
+      });
       
     </script>
   </body>

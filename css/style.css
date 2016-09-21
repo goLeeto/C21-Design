@@ -63,7 +63,7 @@ path.jvectormap-region.jvectormap-element:hover {
 	height:70px;
 }
 .yellow-header{
-	background-color:#ecb429;
+  background: transparent;
 	z-index: 1000;
 }
 .telfHome span{
@@ -241,7 +241,7 @@ path.jvectormap-region.jvectormap-element:hover {
 /* 	MAIN CONTAINER */
 .main-container{
 	position: relative;
-	margin-top:100px;
+	margin-top:30px;
 	min-height: 550px;
 }
 .harta{
@@ -251,10 +251,10 @@ path.jvectormap-region.jvectormap-element:hover {
 .spot01{
 	min-height: 335px;
 	padding-left: 0px;
-  height:90vh;
+  height:96vh;
 }
 
-#top-content li{
+#top-content >li{
   background-color: rgba(0, 0, 0, 0.498039);
   margin: 19px 4px;
   width: 125px;
@@ -286,6 +286,17 @@ path.jvectormap-region.jvectormap-element:hover {
     color:white;
     font-weight: bold;
 }
+#advertise{
+  overflow:hidden;
+}
+#myCarousel .carousel-inner .item{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.pronat#advertise h2 a{
+  padding:0;
+}
 #top-content li:first-child{
   margin-left: 2.7vw;
 }
@@ -295,7 +306,7 @@ path.jvectormap-region.jvectormap-element:hover {
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: rgba(255, 255, 255, 0.1);
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left:0px;
 }
 .spot01-img{
@@ -309,12 +320,11 @@ path.jvectormap-region.jvectormap-element:hover {
   padding: 0px 80px;
   position: relative;
   z-index: 2;
+  margin-top:130px;
 }
 
 .search-slide{
   height: 265px;
-  margin-bottom:70px;
-  margin-top:50px;
   background: #4c4b4a url(http://photosv5.century21.fr/theme/generic/css/images/bg_sliderHOME-section.jpg) repeat-x 0 0;
   border-radius: 8px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
@@ -459,7 +469,7 @@ span.ui-slider-handle:hover{
 
 
 
-.tooltiptext,.tooltiptext1 {
+.customTooltips{
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -475,7 +485,7 @@ span.ui-slider-handle:hover{
     min-width:50px;
     z-index: 4;
 }
-.tooltiptext::after , .tooltiptext1:after {
+.customTooltips::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -484,6 +494,12 @@ span.ui-slider-handle:hover{
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
+}
+
+.advertise-space{
+  height:100%;
+  background:url(http://www.smallbiztechnology.com/wp-content/uploads/2015/09/advertise_banner.jpg);
+  background-size:cover;
 }
 
 .or div .tokenfield {
@@ -554,18 +570,18 @@ span.ui-slider-handle:hover{
 }
 
 
-#slider-range-min,#surface-range-min{
+.ui-slider{
   width:265px;
   float: left;
   background-color: #f8f8f8;
 }
-#surface-range-min{
+.second{
   margin-left:90px;
 }
-#slider-range-min{
+.first{
   margin-left:120px;
 }
-#slider-range-min, #surface-range-min{
+.ui-slider{
   height: 13px;
 }
 
@@ -575,8 +591,20 @@ span.ui-slider-handle:hover{
   width: 47px;
   height: 24px;
   background: url(http://photosv5.century21.fr/theme/generic/css/images/bg_cursorSLIDERHOME.png) no-repeat 0 0;
-  transform: rotate(180deg);
-  z
+  display: none;
+}
+.addBackground{
+  background:#ecb429!important;
+}
+ul.search-containers{
+  padding-left: 0px;
+  min-height: 270px;
+}
+ul.search-containers > li{
+  display: none!important;
+}
+ul.search-containers >li.active{
+  display: list-item!important;
 }
 .spot02{
 	background-color: #666666;
@@ -620,8 +648,13 @@ span.ui-slider-handle:hover{
 .tab-pane .form-group{
 	padding-left: 15px;
 }
-
-
+.ads{
+  list-style-type: none!important;
+}
+#top-content li:nth-child(6){
+  background: url(https://www.lifetouchers.com/app/webroot/img/advertisement/1169124898_200x200-advertise-here.png);
+  background-size:cover;
+}
 /*** drop down***/
 
 .dropdown-check-list {
@@ -756,8 +789,9 @@ input{
 	height:259px;
 }
 .spot03{
-	height:259px;
-}
+	height: 100%;
+  background: white;
+  width: 100%;}
 .spot03 .row .col-md-3{
 	max-height: 230px;
 	margin-top:15px;
@@ -834,7 +868,8 @@ input{
 	padding: 0px; 
 	margin: 0px; 
 	z-index: 98; 
-	top: 20px; left: 185px; 
+	top: 20px; 
+  left: 160px; 
 	width: 91px; 
 	height: 91px; 
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEyMS4wMDAwMDBwdCIgaGVpZ2h0PSIxMjIuMDAwMDAwcHQiIHZpZXdCb3g9IjAgMCAxMjEuMDAwMDAwIDEyMi4wMDAwMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPiA8ZGVmcz4gPGxpbmVhckdyYWRpZW50IGlkPSJncmFkMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPiA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMTU2LDExOCwzMik7c3RvcC1vcGFjaXR5OjEiIC8+IDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDE5NiwxNTgsNzIpO3N0b3Atb3BhY2l0eToxIiAvPiA8L2xpbmVhckdyYWRpZW50PiA8L2RlZnM+IDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDEyMi4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiIGZpbGw9InVybCgjZ3JhZDEpIiBzdHJva2U9Im5vbmUiPiA8cGF0aCBkPSJNNDc0IDExOTEgYy0zMCAtMjMgLTUzIC0zMSAtOTQgLTMzIC01MCAtMyAtNTYgLTYgLTc3IC0zOCAtMTYgLTI0IC0zOCAtNDAgLTcxIC01MSAtNDcgLTE3IC01OCAtMjkgLTgyIC05NCAtNiAtMTYgLTI5IC00MiAtNTEgLTU3IC0zNyAtMjcgLTM5IC0zMCAtMzkgLTgyIDAgLTQ0IC01IC02MCAtMjYgLTg1IC0yMSAtMjYgLTI1IC0zNyAtMTkgLTY0IDkgLTM5IDkgLTk4IDAgLTE1MiAtNiAtMzUgLTMgLTQzIDE5IC02NCAyMiAtMjAgMjYgLTMzIDI2IC03OCAwIC00MCA1IC01NyAxOSAtNjkgNjYgLTU2IDgxIC03NCA4MSAtOTggMCAtMzMgMzMgLTY2IDY2IC02NiAyNCAwIDQyIC0xNSA5OCAtODIgMTQgLTE2IDI1IC0xOCA2MCAtMTMgMzkgNiA0NyA0IDc4IC0yNCA0MCAtMzQgNjAgLTM4IDEwOSAtMTcgMzAgMTIgNDAgMTIgODMgLTIgMzEgLTEwIDUzIC0xMiA2MSAtNiA1OSA0MyA3MiA0OSAxMTkgNDkgNDggMCA1MSAyIDc5IDQyIDE4IDI3IDM4IDQ1IDU1IDQ4IDU2IDEyIDc2IDI5IDkwIDc4IDkgMzQgMjEgNTEgNDEgNjEgNDMgMjMgNTQgNDMgNTIgOTUgLTEgNDAgNCA1NCAzMCA4NyAzMiA0MCAzMiA1MSA4IDExMSAtMTEgMjggLTExIDM3IDQgNjggMjMgNDggMjIgNTYgLTEzIDEwMCAtMjUgMzIgLTMwIDQ2IC0yOCA4OCAxIDUyIDEgNTIgLTY0IDk4IC0xMyA5IC0yOCAzNiAtMzUgNjIgLTEyIDQzIC0xNiA0NyAtNjAgNjAgLTM4IDExIC01NCAyMyAtNzYgNTUgLTI3IDQwIC0zMCA0MiAtODEgNDIgLTQ0IDAgLTYwIDUgLTkxIDMwIC0yMSAxNyAtNDAgMzAgLTQzIDMwIC0yIDAgLTI2IC04IC01MyAtMTcgLTQ1IC0xNiAtNTAgLTE2IC04NCAwIC00NiAyMiAtNDQgMjIgLTkxIC0xMnoiLz4gPC9nPiA8L3N2Zz4="); 
@@ -992,7 +1027,6 @@ input{
 .carousel-indicators{
 	width:100%;
 	float:right;
-	
 }
 .carousel-indicators li{
 	background-color: #fff;
@@ -1162,7 +1196,26 @@ nav ul li ul li:last-child{
     }	
 	
 }
+@media screen and (max-width: 1200px){
+  #top-content li:first-child{
+    margin-left:3%;
+  }
+  #top-content li{
+    width:100px;
+    height:100px;
+  }
+  #top-content li h2{
+    line-height: 0px;
+    margin-left:-10px;
+    margin-top: -10px;
+  }
+  #top-content li h2 a{
+    width:100px;
+    padding: 90px 0 0 20px;
+  }
+}
 @media screen and (max-width: 1040px){
+  
 	.harta{
 	    top: 30px;
 	}
@@ -1187,7 +1240,7 @@ nav ul li ul li:last-child{
 	}
 	.nav.nav-tabs{
 		margin-right: 15px;
-    	margin-left: 15px;
+    margin-left: 15px;
 	}
 	#kerko-prone{
 		margin-left: 15px;
@@ -1196,6 +1249,19 @@ nav ul li ul li:last-child{
 
 	
 
+}
+@media screen and (max-width: 997px){
+  .search-options, .current-arrow{
+    display: none!important;
+  }
+  #top-content li{
+    margin: 19px 20px;
+    width:125px;
+    height:125px;
+  }
+  #top-content li:first-child{
+    margin: 19px 20px;
+  }
 }
 @media screen and (max-width: 768px){
 	.harta{
@@ -1264,10 +1330,23 @@ nav ul li ul li:last-child{
     }
 
 }
-@media screen and (max-width: 420px){
-	.spot01-img{
-		display: none;
-	}
+@media screen and (max-width: 425px){
+  #top-content li {
+    margin: 19px 10px;
+    width: 110px;
+    height: 110px;
+  }
+  #top-content li:first-child {
+    margin: 19px 10px;
+  }
+  #top-content{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #top-content li h2 {
+    margin-left: -5px;
+    margin-top: -15px;
+  }
 	.spot02-background{
 		margin-top: 130px;
 	}
@@ -1294,6 +1373,56 @@ nav ul li ul li:last-child{
 
 
 }
+@media screen and (max-width: 375px){
+  #top-content li {
+    margin: 19px 10px;
+    width: 95px;
+    height: 95px;
+  }
+  .main-tabs {
+    margin-top:85px;
+  }
+  .spot01 {
+    height: 85vh;
+  }
+  #top-content li h2 {
+    font-size:16px;
+    margin-left: -13px;
+    margin-top: -20px;
+  }
+  #top-content li h2 a {
+    padding: 95px 0 0 20px;
+  }
+
+}
+@media screen and (max-width: 320px){
+  #top-content li {
+    margin: 19px 10px;
+    width: 75px;
+    height: 75px;
+  }
+
+  #top-content li h2 {
+    line-height: 0px;
+    margin-left: -25px;
+    margin-top: -22px;
+    font-size: 14px;
+  }
+  #top-content li h2 a {
+    width: 105px;
+    padding: 85px 0 0 20px;
+  }
+  .main-tabs {
+    margin-top:70px;
+  }
+  .spot01 {
+    height: 82vh;
+  }
+}
 
 
-
+@media screen and (min-width: 1920px){
+  .main-tabs{
+    margin-top:150px;
+  }
+}

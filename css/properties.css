@@ -40,8 +40,12 @@
 .fa.fa-th.active, .fa.fa-th-list.active{
 	color:#ecb429;
 }
-.main-container{
-	background-color: #f3f3f3;
+
+.main-containerProp {
+    position: relative;
+    margin-top: 120px;
+    min-height: 550px;
+    background-color: #f3f3f3;
 }
 .space{
 	display: inline-block;
