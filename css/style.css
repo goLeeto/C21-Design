@@ -1491,6 +1491,9 @@ nav ul li ul li:last-child{
   .spot03 .row,.spot03 .row >div{
     height: 100%;
   }
+  ul.search-containers{
+    min-height: 320px;
+  }
 }
 @media screen and (min-width: 1920px){
   .main-tabs{
