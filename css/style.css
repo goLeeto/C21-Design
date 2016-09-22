@@ -1475,7 +1475,23 @@ nav ul li ul li:last-child{
   }
 }
 
-
+@media screen and (min-width: 1440px){
+  .search-options {
+    margin-top: 170px;
+  }
+  .search-pop li {
+    height: 45px;
+  }
+  .search-slide {
+    height: 310px;
+  }
+  .numBox{
+    margin-top:10px;
+  }
+  .spot03 .row,.spot03 .row >div{
+    height: 100%;
+  }
+}
 @media screen and (min-width: 1920px){
   .main-tabs{
     margin-top:150px;

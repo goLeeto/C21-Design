@@ -1020,11 +1020,6 @@
     <script src="js/index.js"></script>
     
 
-    <script>
-      var topOff = $('.main-tabs').offset().top;
-      topOff -= 68;
-      $('.current-arrow').css('top', topOff + 'px');
-    </script>
 
 
 
@@ -1039,6 +1034,7 @@
         $(this).mouseover(function(){
         var currentOffset = $(this).offset().left;
         currentOffset += 40;
+
 
       //arrow animation on li hover
       $('.current-arrow').fadeIn(50);
@@ -1057,8 +1053,10 @@
         $('.search-containers > li:nth-child('+ index +')').fadeIn(30).addClass('active');
 
       }
-      
-
+      val = $('.search-options').height();
+      var topOff = $('.search-options').offset().top;
+      topOff +=val-40;
+      $('.current-arrow').css('top', topOff + 'px');
       });
     });
       //on background click hide the search box
