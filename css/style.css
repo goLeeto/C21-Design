@@ -253,7 +253,9 @@ path.jvectormap-region.jvectormap-element:hover {
 	padding-left: 0px;
   height:96vh;
 }
-
+.hiddenD{
+  display: none;
+}
 #top-content >li{
   background-color: rgba(0, 0, 0, 0.498039);
   margin: 19px 4px;
@@ -527,6 +529,7 @@ span.ui-slider-handle:hover{
 }
 .form-control{
   padding:6px 5px;
+  border: 1px solid #e9e9e9!important;
 }
 
 
@@ -1205,13 +1208,20 @@ nav ul li ul li:last-child{
     height:100px;
   }
   #top-content li h2{
-    line-height: 0px;
-    margin-left:-10px;
-    margin-top: -10px;
+    margin-left: -10px;
+    margin-top: -17px;
   }
+  .pronat#advertise h2{
+    margin-left:0px;
+    margin-top:0px;
+  }
+
   #top-content li h2 a{
     width:100px;
     padding: 90px 0 0 20px;
+  }
+  .pronat#advertise h2 a{
+    width:100%;
   }
 }
 @media screen and (max-width: 1040px){
@@ -1233,8 +1243,18 @@ nav ul li ul li:last-child{
     	height: auto;
 	}
 	.spot03{
-		height: auto;	
+		height: 100%;	
 	}
+  .spot03 .row .col-md-3 {
+     height: 85%;
+    margin-top: 15px;
+  }
+  .spot03 .row{
+    height:100%;
+  }
+  .sticker{
+    left:110px;
+  }
 	.kerkobtn{
 		padding: 8px 25px;
 	}
@@ -1246,7 +1266,9 @@ nav ul li ul li:last-child{
 		margin-left: 15px;
 		margin-right: 15px;
 	}
-
+  .search-options {
+    margin-top: 100px;
+  }
 	
 
 }
@@ -1270,6 +1292,11 @@ nav ul li ul li:last-child{
 	    height: 300px;
 	    top: 30px;
 	}
+  
+  #top-content li h2 {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
 	.visitor{
     	display: none!important;
     }
@@ -1328,13 +1355,19 @@ nav ul li ul li:last-child{
 	.tab-pane .form-group{
     	padding: 14px 0 0 10px;
     }
-
+  .main-tabs {
+    margin-top: 80px;
+    height: auto;
+  }
 }
 @media screen and (max-width: 425px){
   #top-content li {
     margin: 19px 10px;
-    width: 110px;
-    height: 110px;
+    width: 105px;
+    height: 105px;
+  }
+  .main-tabs {
+    margin-top: 100px;
   }
   #top-content li:first-child {
     margin: 19px 10px;
@@ -1347,6 +1380,15 @@ nav ul li ul li:last-child{
     margin-left: -5px;
     margin-top: -15px;
   }
+  .pronat#advertise h2 {
+    margin-top:0px;
+  }
+  
+  #myCarousel .carousel-inner .item {
+      height: 105px;
+      width: 105px;
+  }
+
 	.spot02-background{
 		margin-top: 130px;
 	}
@@ -1369,15 +1411,20 @@ nav ul li ul li:last-child{
     	width: 100%;
     }
 
-    
+    .hiddenD{
+      display: list-item;
+    }
 
 
 }
 @media screen and (max-width: 375px){
   #top-content li {
-    margin: 19px 10px;
+    margin: 19px 7px;
     width: 95px;
     height: 95px;
+  }
+  #top-content li:first-child {
+    margin: 19px 7px;
   }
   .main-tabs {
     margin-top:85px;
@@ -1391,7 +1438,11 @@ nav ul li ul li:last-child{
     margin-top: -20px;
   }
   #top-content li h2 a {
-    padding: 95px 0 0 20px;
+    padding: 85px 0 0 20px;
+  }
+  #myCarousel .carousel-inner .item {
+      height: 95px;
+      width: 95px;
   }
 
 }
@@ -1412,8 +1463,12 @@ nav ul li ul li:last-child{
     width: 105px;
     padding: 85px 0 0 20px;
   }
+  #myCarousel .carousel-inner .item {
+    height: 75px;
+    width: 75px;
+  }
   .main-tabs {
-    margin-top:70px;
+    margin-top:90px;
   }
   .spot01 {
     height: 82vh;
